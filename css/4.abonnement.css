@@ -1,0 +1,111 @@
+.titre-abonnement1 {
+  font-size: 2em;
+  position: relative;
+  color: #7e5837f1;
+  text-align: center;
+}
+
+.blockprog {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
+  background-color: #1e292e;
+  color: #7e5837f1;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 10px;
+}
+
+.titre-abonnement {
+  text-align: center;
+  margin-bottom: 75px;
+  color: #7e5837f1;
+}
+
+.titre-abonnement h2 {
+  font-size: 70px;
+  margin-top: 25px;
+  margin-block: 0px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titre-abonnement p {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-block: 10px;
+}
+
+.abonnement {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #7e5837f1;
+  color: black;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.abonnement h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.tag-prix {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.tag-prix .tout-compris {
+  text-align: center;
+  display: block;
+  font-size: 25px;
+}
+
+.tag-prix .symbole {
+  font-size: 25px;
+}
+
+.tag-prix .prix {
+  font-weight: bold;
+  font-size: 75px;
+}
+
+.tag-prix .par-mois {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.description {
+  margin-bottom: 45px;
+  font-size: 15px;
+}
+
+.bouton-selection {
+  background-color: #182024;
+  color: #7e5837f1;
+  border: none;
+  padding: 1rem 6.5rem;
+  font-size: 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.bouton-selection:hover {
+  background-color: wheat;
+  color: #182024;
+  transform: translateY(-2px);
+}
