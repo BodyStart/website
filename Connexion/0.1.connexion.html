@@ -7,8 +7,8 @@
 
   <link rel="shortcut icon" href="/images/logo-bodystart.png">
   
-  <link rel="stylesheet" href="/css/0.styles.css">
-  <link rel="stylesheet" href="/css/connexion.css">
+  <link rel="stylesheet" href="0.styles.css">
+  <link rel="stylesheet" href="connexion.css">
 
   <script type="module" src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
   <script type="module" src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
@@ -19,21 +19,49 @@
 <body>
     
     <main>
+        <div class="modal-content">
+            <a href="1.index.html">
+                <span class="croix">&times;</span>
+            </a>
 
-            <div class="modal-content">
-                <a href="../index.html">
-                    <span class="croix">&times;</span>
-                </a>
+            <h2>Connectez-vous</h2>
+        </div>
 
-                <h2>Connectez-vous</h2>
+        <div class="form-control">
+            <input type="email" required=""/>
+            <label>
+                <span style="transition-delay: 0ms;">E</span>
+                <span style="transition-delay:50ms;">-</span>
+                <span style="transition-delay:100ms;">M</span>
+                <span style="transition-delay:150ms;">A</span>
+                <span style="transition-delay:200ms;">I</span>
+                <span style="transition-delay:250ms;">L</span>
+            </label>
+        </div>
 
+        <div class="form-control">
+            <input type="password" required="">
+            <label>
+                <span style="transition-delay: 0ms;">M</span>
+                <span style="transition-delay:50ms;">O</span>
+                <span style="transition-delay:100ms;">T</span>
+                <span style="transition-delay:150ms;"></span>
+                <span style="transition-delay:200ms;">D</span>
+                <span style="transition-delay:250ms;">E</span>
+                <span style="transition-delay:250ms;"></span>
+                <span style="transition-delay:250ms;">P</span>
+                <span style="transition-delay:250ms;">A</span>
+                <span style="transition-delay:250ms;">S</span>
+                <span style="transition-delay:250ms;">S</span>
+                <span style="transition-delay:250ms;">E</span>
+            </label>
+        </div>
+        
+        <div class="modal-content">
                 <form class="signUpForm" id="signUpForm">
-                    <input type="email" id="email" placeholder="E-mail" required>
-                    <input type="password" id="password" placeholder="Mot de passe" required>
                     <button type="submit">Se connecter</button>
                     <p>Pas encore membre ? <a href="0.1.inscription.html">S'inscrire</a></p>
                 </form>
-            </div>
         </div>
 
     <script type="module" src="/js/connexion.js"></script>
