@@ -1,27 +1,30 @@
 .section-title {
-  text-align: center;
-  color: #7e5837;
+    text-align: center;
+    color: #7e5837;
 }
 
 p {
-  color: #7e5837;
-font-size: 18px;
+    color: #7e5837;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .transformationImg {
-  width: 19%;
+    width: 19%;
 }
 
-.ligne {
-  border: 2px solid red;
-  height: 4px;
-}
-
-.textpresentation1{
-  display: flex;
+.textpresentation1 {
+    display: flex;
 }
 
 .espacement {
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ligne {
+    border: 0;
+    height: 4px;
+    background-color: var(--secundary-color);
+    margin: 15px 0;
 }
