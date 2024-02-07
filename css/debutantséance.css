@@ -6,8 +6,8 @@
 }
 
 .bouton-rejoindre {
-  background-color: #7e5837f1;
-  color: #182024;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -19,7 +19,7 @@
 }
 
 .bouton-rejoindre:hover {
-  background-color: wheat;
+  background-color: var(--third-color);
 }
 
 .header-center1 {
@@ -35,7 +35,7 @@
 }
 
 .titre-debutant {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,13 +67,13 @@
 
 .zonetexte {
   width: 42%;
-  color: #7e5837f1;
+  color: var(--secundary-color);
 }
 
 .zonetexte hr {
   height: 5px;
   width: 40%;
-  background-color: black;
+  background-color: var(--fourth-color);
   border: none;
   margin: 15px 0px;
 }
@@ -90,8 +90,8 @@
 }
 
 .zone button {
-  background-color: #7e5837f1;
-  color: #182024;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -103,11 +103,11 @@
 }
 
 .zone button:hover {
-  background-color: wheat;
+  background-color: var(--third-color);
 }
 
 .astuce {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   margin: 30px 15%;
   font-size: 1.2em;
 }
@@ -116,7 +116,7 @@
 
 .allexercise {
   margin: 30px 7.5%;
-  color: #7e5837f1;
+  color: var(--secundary-color);
 }
 
 .exo1,
@@ -182,7 +182,7 @@
 .buttonplus button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--fifth-color);
   cursor: pointer;
   font-size: medium;
 }

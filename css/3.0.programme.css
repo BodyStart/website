@@ -1,7 +1,7 @@
 .titre-programme {
   font-size: 2em;
   position: relative;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-align: center;
 }
 
@@ -33,7 +33,7 @@
 
 .programme-titre {
   padding: 15px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   text-align: center;
 }
 
@@ -54,13 +54,13 @@
 hr {
   border: 0;
   height: 1px;
-  background-color: #ddd;
+  background-color: var(--fifth-color);
   margin: 20px 0;
 }
 
 .bouton-rejoindre {
-  background-color: #182024;
-  color: #7e5837f1;
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -72,10 +72,10 @@ hr {
 }
 
 .programme-titre a {
-  color: black;
+  color: var(--fourth-color);
   text-decoration: none;
 }
 
 .bouton-rejoindre:hover {
-  background-color: wheat;
+  background-color: var(--third-color);
 }

@@ -2,7 +2,7 @@
 .titre-programme {
   font-size: 2em;
   position: relative;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-align: center;
 }
 
@@ -17,10 +17,18 @@
 
 .block {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
-  background-color: #7e5837f1;
-  color: #182024;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
   text-align: center;
   border-radius: 10px;
+}
+.block-perso {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
 }
 
 .titre-debutant h2 {
@@ -34,8 +42,8 @@
 }
 
 .bouton-rejoindre {
-  background-color: #182024;
-  color: #7e5837f1;
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
   border: none;
   padding: 1rem 6.5rem;
   font-size: 1em;
@@ -47,8 +55,8 @@
 }
 
 .bouton-rejoindre:hover {
-  background-color: wheat;
-  color: #182024;
+  background-color: var(--third-color);
+  color: var(--primary-color);
   transform: translateY(-2px);
 }
 
@@ -59,7 +67,7 @@
   margin-top: 3%;
   text-align: left;
   margin-bottom: 20px;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 2em;
 }
 
@@ -69,65 +77,13 @@
   margin-bottom: 1%;
   text-align: justify;
   line-height: 1.6;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 1.25em;
-}
-
-/* PAIEMENT BOUTON */
-
-.pricing-option {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  padding: 1%;
-}
-
-.pricing-option h2 {
-  text-align: left;
-  margin-bottom: 3%;
-  color: #7e5837f1;
-  font-size: 2em;
-}
-
-.price-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding: 10px;
-  color: #7e5837f1;
-}
-
-.price-option input[type="radio"] {
-  margin-right: 10px;
-}
-
-.price {
-  margin-left: auto;
-}
-
-.join-button {
-  background-color: #7e5837f1;
-  color: #182024;
-  border: 2px solid wheat;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 40px;
-}
-.join-button:hover {
-  background-color: wheat;
-}
-
-.price-option:hover {
-  background-color: wheat;
-  color: black;
 }
 
 .ligne-noir {
   border: 0;
   height: 1px;
-  background-color: #182024;
+  background-color: var(--primary-color);
   margin: 15px 0;
 }

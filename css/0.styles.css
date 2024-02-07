@@ -1,17 +1,26 @@
+:root {
+  --primary-color: #182024;
+  --secundary-color: #7e5837f1;
+  --third-color: wheat;
+  --fourth-color: black;
+  --fifth-color: white;
+  --sixth-color: red;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
-  background-color: #182024;
+  background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
 }
 
 .ligne {
   border: 0;
   height: 4px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   margin: 15px 0;
 }
 
@@ -71,7 +80,7 @@ body {
 .menu-icon span {
   display: block;
   height: 2px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
 }
 
 .logo-text {
@@ -81,12 +90,12 @@ body {
 
 .logo-text a {
   text-decoration: none;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   transition: color 0.3s ease;
 }
 
 .logo-text a:hover {
-  color: wheat;
+  color: var(--third-color);
 }
 
 .nav {
@@ -107,7 +116,7 @@ body {
 }
 
 .nav li a {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease;
@@ -117,13 +126,13 @@ body {
 
 .nav li a:hover,
 .nav li a.active {
-  color: wheat;
+  color: var(--third-color);
 }
 
 .connexion-btn {
-  background-color: #7e5837f1; /* Couleur de fond du bouton */
-  border: 1px solid wheat;
-  color: #182024;
+  background-color: var(--secundary-color); /* Couleur de fond du bouton */
+  border: 1px solid var(--third-color);
+  color: var(--primary-color);
   padding: 15px 50px;
   border-radius: 30px;
   cursor: pointer;
@@ -131,14 +140,16 @@ body {
 }
 
 .connexion-btn:hover {
-  background-color: wheat; /* Couleur de fond du bouton au survol */
-  color: #182024;
+  background-color: var(
+    --third-color
+  ); /* Couleur de fond du bouton au survol */
+  color: var(--primary-color);
 }
 
 .header-hr {
   border: 0;
   height: 1px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   margin: 15px 0;
 }
 
@@ -147,12 +158,12 @@ body {
 .footer-hr {
   border: 0;
   height: 1px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   margin: 15px 0;
 }
 
 .footer {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-align: center;
   padding: 20px 0;
 }
@@ -167,7 +178,7 @@ body {
 }
 
 .footer-content a {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-decoration: none;
 }
 
@@ -182,19 +193,21 @@ body {
   bottom: 20px;
   right: 20px;
   padding: 18px 70px;
-  background-color: #7e5837f1;
-  color: #09282b;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 30px;
   cursor: pointer;
   z-index: 1000;
-  border: 1px solid wheat;
+  border: 1px solid var(--third-color);
   transition: background-color 0.3s ease;
 }
 
 .chat-btn:hover {
-  background-color: wheat; /* Couleur de fond du bouton au survol */
-  color: #182024;
+  background-color: var(
+    --third-color
+  ); /* Couleur de fond du bouton au survol */
+  color: var(--primary-color);
 }
 
 /* BURGER OUVERTURE/FERMETURE */
@@ -224,24 +237,24 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  border-bottom: 0.1vw solid #7e5837f1; /* Ligne de séparation entre les boutons */
+  border-bottom: 0.1vw solid var(--secundary-color); /* Ligne de séparation entre les boutons */
   background-color: transparent; /* Pas de couleur de fond */
-  color: #7e5837f1; /* Couleur du texte */
+  color: var(--secundary-color); /* Couleur du texte */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Effet de survol */
 
 .burger-bouton button:hover {
-  background-color: #7e5837f1; /* Couleur de fond au survol */
-  color: wheatfff; /* Couleur du texte au survol */
+  background-color: var(--secundary-color); /* Couleur de fond au survol */
+  color: var(--third-color); /* Couleur du texte au survol */
 }
 
 /* Effet de survol pour le bouton de fermeture */
 
 .fermer:hover {
-  background-color: #7e5837f1; /* Couleur de fond au survol */
-  color: wheatfff; /* Couleur du texte au survol */
+  background-color: var(--secundary-color); /* Couleur de fond au survol */
+  color: var(--third-color); /* Couleur du texte au survol */
 }
 
 .bouton-profil {
@@ -255,8 +268,8 @@ body {
   bottom: 1vw;
   right: 1vw;
   padding: 0.8vw 3vw;
-  background-color: #7e5837f1;
-  color: #09282b;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 30vw;
   cursor: pointer;
@@ -270,9 +283,9 @@ body {
   right: 1vw;
   max-width: 20vw;
   background-color: rgba(0, 0, 0, 0.6);
-  border: 0.1vw solid #7e5837f1;
+  border: 0.1vw solid var(--secundary-color);
   border-radius: 1vw 1vw 0 0;
-  box-shadow: 0 0 1vw #7e5837f1;
+  box-shadow: 0 0 1vw var(--secundary-color);
   display: none; /* Masquer la boîte de chat par défaut */
   padding: 7% 4%;
   overflow-y: auto;
@@ -283,7 +296,7 @@ body {
 
 .chat-box p {
   font-size: 0.8vw;
-  color: white;
+  color: var(--fifth-color);
 }
 
 .close-btn {
@@ -293,13 +306,13 @@ body {
   right: 0;
   padding: 1vw;
   cursor: pointer;
-  color: wheat; /* Couleur du texte */
+  color: var(--third-color); /* Couleur du texte */
 }
 
 .chat-box button {
   font-size: 0.8vw;
-  background-color: #7e5837f1; /* Couleur de fond du bouton */
-  color: #09282b; /* Couleur du texte */
+  background-color: var(--secundary-color); /* Couleur de fond du bouton */
+  color: var(--primary-color); /* Couleur du texte */
   border: none;
   padding: 0.3vw;
   margin-top: 0.3vw;
@@ -314,7 +327,7 @@ body {
 
 #chatContent {
   font-size: 0.8vw;
-  color: wheat; /* Couleur du texte dans la boîte de chat */
+  color: var(--third-color); /* Couleur du texte dans la boîte de chat */
 }
 
 #chatBox.open {

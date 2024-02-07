@@ -7,14 +7,14 @@
 
 .titre-profil {
   margin: 2%;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-align: center;
   align-items: center;
   margin-left: 10%;
 }
 
 #profile-container {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   margin: 2%;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
   align-self: flex-start;
   margin-right: 10%;
   background-color: transparent;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   border: none;
   padding: 10px 15px;
   border-radius: 10px;
@@ -60,7 +60,7 @@
 .profil-hr {
   border: 0;
   height: 0.1vw;
-  background-color: #ddd;
+  background-color: var(--fifth-color);
   margin: 2vw;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .programme-encours {
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   border: none;
   border-radius: 10px;
   overflow: hidden;
@@ -86,7 +86,7 @@
 }
 
 .programme-titre {
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   text-align: center;
   padding: 1vw;
 }
@@ -100,8 +100,8 @@
   font-size: 1.5vw;
 }
 .bouton-rejoindre {
-  background-color: #182024;
-  color: #7e5837f1;
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -113,5 +113,5 @@
 }
 
 .bouton-rejoindre:hover {
-  background-color: wheat;
+  background-color: var(--third-color);
 }

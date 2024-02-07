@@ -1,7 +1,7 @@
 .titre-coach {
   font-size: 2em;
   position: relative;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .coach-profile {
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   border: none;
   border-radius: 10px;
   overflow: hidden;
@@ -29,7 +29,7 @@
 .coach-info {
   padding: 10px;
   text-align: center;
-  color: #182024;
+  color: var(--primary-color);
 }
 
 .coach-info h3 {
@@ -38,8 +38,8 @@
 
 .coach-select-btn {
   padding: 10px 20px;
-  background-color: #182024;
-  color: #7e5837f1;
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -49,6 +49,8 @@
 }
 
 .coach-select-btn:hover {
-  background-color: wheat; /* Couleur de fond du bouton au survol */
-  color: #182024;
+  background-color: var(
+    --third-color
+  ); /* Couleur de fond du bouton au survol */
+  color: var(--primary-color);
 }
