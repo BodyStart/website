@@ -147,9 +147,9 @@ body {
 }
 
 .header-hr {
-  border: 0;
+  border: 1px solid var(--secundary-color);
   height: 1px;
-  background-color: var(--secundary-color);
+  /*background-color: var(--secundary-color);*/
   margin: 15px 0;
 }
 
