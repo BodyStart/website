@@ -29,8 +29,9 @@ p {
     background-color: var(--secundary-color);
     margin: 15px 0;
 }
-.timeline {
-    background-color:  #182024;
+
+.timeline1 {
+    background-color: #182024;
     margin: 20px auto;
     padding: 20px;
 }
@@ -39,7 +40,7 @@ p {
 .card {
     position: relative;
     max-width: 400px;
-    background-color:  #182024;
+    background-color: #182024;
     border: none;
 }
 
@@ -47,9 +48,11 @@ p {
 .card:nth-child(odd) {
     padding: 30px 0 30px 30px;
 }
+
 .card:nth-child(even) {
     padding: 30px 30px 30px 0;
 }
+
 /* Global ::before */
 .card::before {
     content: "";
@@ -106,7 +109,7 @@ p {
 .info {
     display: flex;
     flex-direction: column;
-    background:  #333;
+    background: #333;
     color: grey;
     border-radius: 10px;
     padding: 10px;
@@ -144,17 +147,14 @@ p {
     right: -45px;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 .design-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:  #182024;
+    background-color: #182024;
     min-height: 100vh;
-    padding: 100px 0;
-    font-family: Jost;
+    font-family: "Poppins", sans-serif;
 }
 
 .design {
@@ -173,22 +173,20 @@ p {
 }
 
 .timeline-content {
-    padding: 20px;
     background: #1f1f1f;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    border-radius: 5px;
     color: white;
     padding: 1.75rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
-    margin: 1rem;
     margin-bottom: 20px;
     border-radius: 6px;
 }
 
 .timeline-component {
     margin: 0px 20px 20px 20px;
+    width: 95%;
 }
 
 @media screen and (min-width: 768px) {
@@ -196,15 +194,18 @@ p {
         display: grid;
         grid-template-columns: 1fr 3px 1fr;
     }
+
     .timeline-middle {
         position: relative;
         background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
         width: 3px;
         height: 100%;
     }
+
     .main-middle {
         opacity: 0;
     }
+
     .timeline-circle {
         position: absolute;
         top: 0;
