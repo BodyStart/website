@@ -346,3 +346,7 @@ body {
 #questionForm input {
   margin-bottom: 1vw;
 }
+
+.modal-content{
+  background-color: #D8CDC3;
+}
