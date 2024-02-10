@@ -131,7 +131,6 @@ body {
   text-decoration: none;
   padding: 10px;
   transition: color 0.3s ease;
-  padding: 20px;
   font-size: 20px;
 }
 
@@ -356,6 +355,15 @@ body {
 
 #questionForm input {
   margin-bottom: 1vw;
+}
+
+.modal-content{
+  background-color: #D8CDC3;
+}
+
+.modal-open .programmes:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 @media screen and (min-width: 750px) and (max-width: 900px) {
