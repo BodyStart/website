@@ -21,8 +21,15 @@ h5 {
   color: var(--fifth-color);
   margin: 0;
 }
+h2 {
+  font-size: 35px;
+}
+h5 {
+  font-size: 20px;
+}
 h3 {
   color: var(--secundary-color);
+  font-size: 20px;
 }
 
 .btn-primary {
@@ -44,8 +51,8 @@ h3 {
 }
 
 .pricing-card {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 435px;
   background-color: var(--seventh-color);
   border-radius: 5px;
   box-shadow: 0 0px 10px var(--secundary-color);
@@ -66,10 +73,10 @@ h3 {
 
 .label-best {
   background: var(--secundary-color);
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   position: absolute;
-  top: 15px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
   padding: 10px;
   font-weight: 600;
 }
@@ -87,4 +94,11 @@ h3 {
     color: var(--fifth-color);
 }
 
-
+@media (max-width: 550px) {
+.pricing-card {
+  width: 330px;
+}
+.description h2 {
+  text-align: center !important;
+}
+}

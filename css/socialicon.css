@@ -1,5 +1,5 @@
 .wrapper {
-  width: 35rem;
+  width: 30rem;
   margin: 0 auto;
 }
 
@@ -62,8 +62,16 @@
   --bg: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
 }
 
-.item:nth-child(2) {
+.item:nth-child(4) {
   --bg: #0777e9;
+}
+
+.item:nth-child(2) {
+  --bg: #25D366;
+}
+
+.item:nth-child(3) {
+  --bg: orange;
 }
 
 @media only screen and (max-width: 600px) {
