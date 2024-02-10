@@ -40,6 +40,16 @@ body {
   padding: 0 20px;
 }
 
+.header-right
+{
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  width: 104.91px;
+}
+
 .logo-bs {
   height: 100px;
 }
@@ -346,4 +356,153 @@ body {
 
 #questionForm input {
   margin-bottom: 1vw;
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .nav li a {
+    color: var(--secundary-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.logo-text {
+  font-size: 3.5em;
+  cursor: pointer;
+}
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 749px) {
+  .nav li a {
+    color: var(--secundary-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.logo-text {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+}
+
+@media (max-width: 900px) {
+  .section-présentation h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secundary-color);
+    font-size: 2em;
+}
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Existing styles for larger screens can remain outside the media query */
+
+.nav23 {
+  display: none;
+}
+
+/* Style for close button */
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  text-align: right;
+}
+
+/* Remove list bullet points and padding */
+.nav23 ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the hamburger when active */
+.hamburger.active {
+  color: #fff; /* Example style change */
+}
+
+.nav23 ul li a, .nav23 ul li a:visited {
+  color: #fff; /* Adjust if you have a different preferred color */
+  text-decoration: none;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+
+@media (max-width: 700px) {
+  .nav {
+      display: none; /* Hide the original nav on smaller screens */
+  }
+
+  .hamburger {
+      display: block; /* Show the hamburger button on smaller screens */
+  }
+
+  /* The nav23 will still be hidden until toggled by the hamburger button */
+  .nav23 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+  }
+
+  /* This class is added to nav23 when the hamburger is clicked */
+  .nav23-active {
+      transform: translateX(0);
+  }
+  .header-right {
+    width: auto;
+    /* width: 104.91px; */
+}
+.logo-text {
+  font-size: 3em;
+  cursor: pointer;
+}
+.header-right {
+  padding: 0px;
+}
+.header-left {
+  padding: 0px;
+}
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 0px
+}
+.logo-bs {
+  height: 80px;
+  width: 80px;
+}
 }
