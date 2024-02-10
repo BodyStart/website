@@ -94,4 +94,11 @@ h3 {
     color: var(--fifth-color);
 }
 
-
+@media (max-width: 550px) {
+.pricing-card {
+  width: 330px;
+}
+.description h2 {
+  text-align: center !important;
+}
+}

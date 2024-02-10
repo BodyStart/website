@@ -72,3 +72,26 @@ h5 {
   color: var(--fifth-color);
   margin-top: 20px;
 }
+
+@media (max-width: 550px) {
+  .header {
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 0px
+}
+.logo-bs {
+  height: 80px;
+  width: 80px;
+}
+.description h2 {
+  text-align: center;
+  margin-left: 0px;
+}
+.programmes {
+  width: 370px;
+}
+.pricing-card {
+  width: 330px;
+}
+}

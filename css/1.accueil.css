@@ -2,10 +2,10 @@
 
 .Accueil-background-image {
   background: url(/images/accueil.png);
-  height: 1200px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 /* Programme */
@@ -108,4 +108,23 @@
   line-height: 1.6;
   color: var(--secundary-color);
   font-size: 1.25em;
+}
+
+@media (max-width: 1100px) {
+  .Accueil-background-image {
+    background: url(/images/accueil.png);
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.programme {
+  transition: transform 0.5s ease; /* Adjust time as needed */
+}
+
+.programme:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0px 40px var(--secundary-color);
 }
