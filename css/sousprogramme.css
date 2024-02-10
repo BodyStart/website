@@ -96,3 +96,13 @@ h3 {
   background-color: var(--fifth-color);
   color: var(--secundary-color);
 }
+
+@media (max-width: 550px) {
+.programmes {
+  width: 370px;
+}
+.description h2 {
+  text-align: center !important;
+  margin-left: 0px;
+}
+}

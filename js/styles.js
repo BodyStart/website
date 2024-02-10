@@ -13,3 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
       hamburger.classList.remove('active'); // Remove active class when nav is closed
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.liststyle1 a');
+
+  links.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+          // Remove active class from all links
+          links.forEach(function(lnk) {
+              lnk.classList.remove('clicked');
+          });
+          // Add active class to the clicked link
+          this.classList.add('clicked');
+      });
+  });
+});
