@@ -1,13 +1,11 @@
-
-
 /* milieu de page  */
 
 .Accueil-background-image {
   background: url(/images/accueil.png);
-  height: 1200px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 /* Programme */
@@ -15,11 +13,11 @@
 .section-titre {
   text-align: center;
   margin: 15px 0;
-  color: #7e5837f1;
+  color: var(--secundary-color);
 }
 
 .section-titre a {
-  color: #7e5837f1;
+  color: var(--secundary-color);
   text-decoration: none;
   padding: 0.5rem;
   transition: color 0.3s ease;
@@ -31,8 +29,11 @@
 
 .all-programme {
   display: flex;
-  justify-content: center; /* alignement horizontal */
-  gap: 100px;
+  justify-content: center;
+  gap: 7%;
+  flex-wrap: wrap;
+  margin-left: 11.7%;
+  margin-right: 11.7%;
 }
 
 .programme {
@@ -60,7 +61,7 @@
 
 .programme-titre {
   padding: 15px;
-  background-color: #7e5837f1;
+  background-color: var(--secundary-color);
   text-align: center;
 }
 
@@ -70,8 +71,8 @@
 }
 
 .bouton-rejoindre {
-  background-color: #182024;
-  color: #7e5837f1;
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -84,7 +85,7 @@
 }
 
 .bouton-rejoindre:hover {
-  background-color: wheat;
+  background-color: var(--third-color);
 }
 
 /* Présentation */
@@ -97,7 +98,7 @@
 .section-présentation h3 {
   text-align: left;
   margin-bottom: 20px;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 2em;
 }
 
@@ -105,6 +106,25 @@
   margin-bottom: 15px;
   text-align: justify;
   line-height: 1.6;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 1.25em;
+}
+
+@media (max-width: 1100px) {
+  .Accueil-background-image {
+    background: url(/images/accueil.png);
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.programme {
+  transition: transform 0.5s ease; /* Adjust time as needed */
+}
+
+.programme:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0px 40px var(--secundary-color);
 }

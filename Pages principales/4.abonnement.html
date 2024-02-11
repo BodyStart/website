@@ -9,11 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="shortcut icon" href="/images/logo-bodystart.png" />
 
     <link rel="stylesheet" href="/css/0.styles.css" />
     <link rel="stylesheet" href="/css/4.abonnement.css" />
+    <link rel="stylesheet" href="/css/socialicon.css" />
 
     <script type="module" src="/js/firebase-config.js"></script>
     <script type="module" src="/js/authentification.js"></script>
@@ -28,35 +36,96 @@
           class="logo-bs"
         />
       </div>
+
       <div class="header-center">
         <div class="logo-text">
           <a href="../index.html">Bodystart</a>
         </div>
-
         <nav class="nav">
           <ul>
-            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../index.html" class="active">Accueil</a></li>
             <li><a href="2.quisuisje.html">Qui suis-je ?</a></li>
             <li><a href="3.0.programme.html">Programmes</a></li>
-            <li><a href="4.abonnement.html" class="active">Abonnement</a></li>
-            <li><a href="5.transformations.html">Transformations</a></li>
+            <li><a href="4.abonnement.html">Abonnement</a></li>
+            <!-- <li><a href="5.transformations.html">Transformations</a></li>
             <li><a href="6.vossuggestions.html">Vos suggestions</a></li>
-            <li><a href="7.membres.html">Membres (coach)</a></li>
+            <li><a href="7.membres.html">Membres (coach)</a></li> -->
           </ul>
         </nav>
       </div>
+
       <div class="header-right">
+        <button class="hamburger" aria-label="Open navigation menu">☰</button>
+        <nav class="nav23">
+            <div class="close-btn">✖</div>
+            <ul>
+                <li class="liststyle1"><a href="../index.html" class="active">Accueil</a></li>
+                <li class="liststyle1"> <a href="2.quisuisje.html">Qui suis-je ?</a></li>
+                <li class="liststyle1"> <a href="3.0.programme.html">Programmes</a></li>
+                <li class="liststyle1"> <a href="4.abonnement.html">Abonnement</a></li>
+            </ul>
+        </nav>
+    </div>
+      <!-- <div class="header-right">
         <button id="boutonConnexion" class="connexion-btn">Connexion</button>
-      </div>
+      </div> -->
     </header>
 
     <hr class="header-hr" />
 
     <main>
-      <div class="titre-abonnement1">
+      <!-- <div class="titre-abonnement1">
         <h1>Votre abonnement</h1>
+      </div> -->
+      <div class="placement">
+        <div class="pricing-card">
+          <h2>Entraînement</h2>
+          <h5>Programme sport</h5>
+          <span class="price">€40.00</span>
+          <h5>4 semaines</h5>
+          <h3>Contenu</h3>
+          <ul class="list-group">
+            <li class="truc">- programme sportif</li>
+            <li class="truc">- Conseils exercices</li>
+            <li class="truc">- 1 truc</li>
+            <li class="truc">- 1 truc</li>
+            <li class="truc">- échange via whatapps</li>
+          </ul>
+          <button class="btn-primary">En savoir plus</button>
+        </div>
+        <div class="pricing-card">
+          <span class="label-best">Best deal</span>
+          <h2>Complet</h2>
+          <h5>Programme sport + plan alimentaire</h5>
+          <span class="price">€60.00</span>
+          <h5>4 semaines</h5>
+          <h3>Contenu</h3>
+          <ul class="list-group">
+            <li class="truc">- 1 Programme sportif</li>
+            <li class="truc">- 1 Plan alimentaire</li>
+            <li class="truc">- 1 Conseils nutrition</li>
+            <li class="truc">- 1 Conseils exercices</li>
+            <li class="truc">- échange via whatapps</li>
+          </ul>
+          <button class="btn-primary">En savoir plus</button>
+        </div>
+        <div class="pricing-card">
+          <h2>Nutrition</h2>
+          <h5>Plan alimentaire</h5>
+          <span class="price">€30.00</span>
+          <h5>4 semaines</h5>
+          <h3>Contenu</h3>
+          <ul class="list-group">
+            <li class="truc">- 1 Plan alimentaire</li>
+            <li class="truc">- Conseils nutrition</li>
+            <li class="truc">- 1 truc</li>
+            <li class="truc">- 1 truc</li>
+            <li class="truc">- échange via whatapps</li>
+          </ul>
+          <button class="btn-primary">En savoir plus</button>
+        </div>
       </div>
-      <div class="blockprog">
+      <!-- <div class="blockprog">
         <div class="titre-abonnement">
           <h2>Formule tout</h2>
           <h2>compris</h2>
@@ -76,17 +145,20 @@
           </p>
           <button class="bouton-selection">Sélectionner</button>
         </div>
-      </div>
+      </div> -->
     </main>
-
+    <hr class="footer-hr" />
     <footer class="footer">
-      <hr class="footer-hr" />
       <div class="footer-content">
         <p>BODYSTART</p>
-        <p>
-          Contacter nous:
-          <a href="mailto:bodystartpro@gmail.com">bodystartpro@gmail.com</a>
-        </p>
+        <div class="wrapper">
+          <ul class="icon-list">
+            <li class="item"><a href="https://www.instagram.com/adam_.lc/"><i class="fa-brands fa-instagram icon"></i></a></li>
+            <li class="item"><a href="https://discord.gg/rhGMPCQM"><i class="fa-brands fa-whatsapp icon"></i></a></li>
+            <li class="item"><a href="https://discord.gg/rhGMPCQM"><i class="fas fa-envelope icon"></i></a></li>
+            <li class="item"><a href="https://discord.gg/rhGMPCQM"><i class="fa-brands fa-discord icon"></i></a></li>
+          </ul>
+        </div>
         <p>@2023 Bodystart</p>
       </div>
     </footer>
@@ -112,7 +184,7 @@
 
     <!-- BOUTON CHAT -->
 
-    <div id="chatBox" class="chat-box">
+    <!-- <div id="chatBox" class="chat-box">
       <div id="chatContent"></div>
       <form id="questionForm" onsubmit="submitQuestion(event)">
         <input type="text" id="messageInput" placeholder="Message" />
@@ -121,7 +193,7 @@
       <span class="close-btn" onclick="toggleChatBox()">&times;</span>
     </div>
 
-    <button class="chat-btn" onclick="toggleChatBox()">Une question ?</button>
+    <button class="chat-btn" onclick="toggleChatBox()">Une question ?</button> -->
 
     <!-- JAVASCRIPT -->
 

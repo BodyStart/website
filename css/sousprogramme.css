@@ -1,65 +1,9 @@
-/* BLOCK EN TETE */
-.titre-programme {
-  font-size: 2em;
-  position: relative;
-  color: #7e5837f1;
-  text-align: center;
-}
-
-.programmes {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 5%;
-  margin-left: 11.7%;
-  margin-right: 11.7%;
-}
-
-.block {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
-  background-color: #7e5837f1;
-  color: #182024;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.titre-debutant h2 {
-  font-size: 3em;
-}
-
-.debutant-image {
-  width: 100%;
-  display: block;
-  margin-top: 20px;
-}
-
-.bouton-rejoindre {
-  background-color: #182024;
-  color: #7e5837f1;
-  border: none;
-  padding: 1rem 6.5rem;
-  font-size: 1em;
-  border-radius: 20px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-  margin-bottom: 3%;
-}
-
-.bouton-rejoindre:hover {
-  background-color: wheat;
-  color: #182024;
-  transform: translateY(-2px);
-}
-
-/* DESCRIPTION PRODUIT */
-
 .description h2 {
   margin-left: 11.7%;
   margin-top: 3%;
   text-align: left;
   margin-bottom: 20px;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 2em;
 }
 
@@ -69,65 +13,96 @@
   margin-bottom: 1%;
   text-align: justify;
   line-height: 1.6;
-  color: #7e5837f1;
+  color: var(--secundary-color);
   font-size: 1.25em;
-}
-
-/* PAIEMENT BOUTON */
-
-.pricing-option {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  padding: 1%;
-}
-
-.pricing-option h2 {
-  text-align: left;
-  margin-bottom: 3%;
-  color: #7e5837f1;
-  font-size: 2em;
-}
-
-.price-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding: 10px;
-  color: #7e5837f1;
-}
-
-.price-option input[type="radio"] {
-  margin-right: 10px;
-}
-
-.price {
-  margin-left: auto;
-}
-
-.join-button {
-  background-color: #7e5837f1;
-  color: #182024;
-  border: 2px solid wheat;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 40px;
-}
-.join-button:hover {
-  background-color: wheat;
-}
-
-.price-option:hover {
-  background-color: wheat;
-  color: black;
 }
 
 .ligne-noir {
   border: 0;
   height: 1px;
-  background-color: #182024;
+  background-color: var(--primary-color);
   margin: 15px 0;
+}
+
+
+.placement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 100px;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 50px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.programmes {
+  width: 400px;
+  height: 825px;
+  background-color: var(--seventh-color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
+  transition: 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.programmes:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0px 40px var(--secundary-color);
+}
+
+.debutant-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+h2 {
+  color: var(--fifth-color);
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px 20px;
+}
+
+h3 {
+  color: var(--secundary-color);
+}
+
+.programmes p {
+  color: var(--fifth-color);
+}
+
+.btn-primary {
+  background: var(--secundary-color);
+  color: var(--fifth-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--fifth-color);
+  color: var(--secundary-color);
+}
+
+@media (max-width: 550px) {
+.programmes {
+  width: 370px;
+}
+.description h2 {
+  text-align: center !important;
+  margin-left: 0px;
+}
 }

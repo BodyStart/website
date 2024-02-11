@@ -6,224 +6,244 @@
     <title>Bodystart</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
+            rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/images/logo-bodystart.png"/>
 
-    <link rel="shortcut icon" href="/images/logo-bodystart.png" />
-
-    <link rel="stylesheet" href="/css/0.styles.css" />
-    <link rel="stylesheet" href="/css/sousprogramme.css" />
+    <link rel="stylesheet" href="/css/0.styles.css"/>
+    <link rel="stylesheet" href="/css/sousprogramme.css"/>
 
     <script type="module" src="/js/firebase-config.js"></script>
     <script type="module" src="/js/authentification.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <div class="header-left">
+<body>
+<header class="header">
+    <div class="header-left">
         <img
-          src="/images/logo-bodystart.png"
-          alt="logo-bodystart"
-          class="logo-bs"
+                src="/images/logo-bodystart.png"
+                alt="logo-bodystart"
+                class="logo-bs"
         />
-      </div>
-      <div class="header-center">
+    </div>
+    <div class="header-center">
         <div class="logo-text">
-          <a href="../index.html">Bodystart</a>
+            <a href="../index.html">Bodystart</a>
         </div>
-
         <nav class="nav">
           <ul>
             <li><a href="../index.html">Accueil</a></li>
-            <li>
-              <a href="/Pages principales/2.quisuisje.html">Qui suis-je ?</a>
-            </li>
-            <li>
-              <a href="/Pages principales/3.0.programme.html" class="active"
-                >Programmes</a
-              >
-            </li>
-            <li>
-              <a href="/Pages principales/4.abonnement.html">Abonnement</a>
-            </li>
-            <li>
-              <a href="/Pages principales/5.transformations.html"
-                >Transformations</a
-              >
-            </li>
-            <li>
-              <a href="/Pages principales/6.vossuggestions.html"
-                >Vos suggestions</a
-              >
-            </li>
-            <li>
-              <a href="/Pages principales/7.membres.html">Membres (coach)</a>
-            </li>
+            <li><a href="/Pages principales/2.quisuisje.html">Qui suis-je ?</a></li>
+            <li><a href="/Pages principales/3.0.programme.html" class="active">Programmes</a></li>
+            <li><a href="/Pages principales/4.abonnement.html">Abonnement</a></li>
+            <!-- <li><a href="5.transformations.html">Transformations</a></li>
+            <li><a href="6.vossuggestions.html">Vos suggestions</a></li>
+            <li><a href="7.membres.html">Membres (coach)</a></li> -->
           </ul>
         </nav>
       </div>
+
       <div class="header-right">
+        <button class="hamburger" aria-label="Open navigation menu">☰</button>
+        <nav class="nav23">
+            <div class="close-btn">✖</div>
+            <ul>
+                <li class="liststyle1"><a href="../index.html" class="active">Accueil</a></li>
+                <li class="liststyle1"> <a href="/Pages principales/2.quisuisje.html">Qui suis-je ?</a></li>
+                <li class="liststyle1"> <a href="/Pages principales/3.0.programme.html" class="active">Programmes</a></li>
+                <li class="liststyle1"> <a href="/Pages principales/4.abonnement.html">Abonnement</a></li>
+            </ul>
+        </nav>
+    </div>
+      <!-- <div class="header-right">
         <button id="boutonConnexion" class="connexion-btn">Connexion</button>
-      </div>
+      </div> -->
     </header>
 
-    <hr class="header-hr" />
+<hr class="header-hr"/>
 
-    <main>
-      <div class="titre-programme">
-        <h1>Programmes Bodybuilder</h1>
-      </div>
-      <div class="description">
-        <h2><u>Description :</u></h2>
+<main>
+    <div class="description">
+        <h2><u>Description des programmes Bodybuilders :</u></h2>
         <p>
-          Découvrez nos programmes de bodybuilding basés sur un cycle de 5
-          jours, conçus pour une progression maximale de votre physique. Ce
-          programme innovant ne se limite pas à une répartition musculaire
-          spécifique par jour, mais plutôt à un cycle dynamique pour des
-          résultats optimaux. Il est particulièrement adapté aux personnes qui
-          possèdent déjà une base musculaire bien développée et qui aspirent à
-          des objectifs esthétiques ou à la compétition.
+            Découvrez nos programmes de bodybuilding basés sur un cycle de 5/6/7
+            jours, conçus pour une progression maximale de votre physique. Ce
+            programme innovant ne se limite pas à une répartition musculaire
+            spécifique par jour, mais plutôt à un cycle dynamique pour des
+            résultats optimaux. Il est particulièrement adapté aux personnes qui
+            possèdent déjà une base musculaire bien développée et qui aspirent à
+            des objectifs esthétiques ou à la compétition.
         </p>
         <p><u>Avantages :</u></p>
         <p>
-          - <u>Cycle de 5 jours :</u> Notre programme est structuré sur un cycle de 5
-          jours, vous permettant de travailler chaque groupe musculaire de
-          manière équilibrée et progressive.
+            - <u>Cycle de 5/6/7 jours :</u> Notre programme est structuré sur un
+            cycle de 5/6/7 jours, vous permettant de travailler chaque groupe
+            musculaire de manière équilibrée et progressive.
         </p>
         <p>
-          - <u>Progression maximale :</u> Grâce à l'approche en cycle, votre corps sera
-          constamment stimulé et vous pourrez maximiser votre développement
-          musculaire et votre force.
+            - <u>Progression maximale :</u> Grâce à l'approche en cycle, votre
+            corps sera constamment stimulé et vous pourrez maximiser votre
+            développement musculaire et votre force.
         </p>
         <p>
-          - <u>Adaptation personnalisée :</u> Chaque cycle sera adapté en fonction de
-          vos caractéristiques physiques et de vos objectifs spécifiques, afin
-          d'optimiser les résultats.
+            - <u>Adaptation personnalisée :</u> Chaque cycle sera adapté en
+            fonction de vos caractéristiques physiques et de vos objectifs
+            spécifiques, afin d'optimiser les résultats.
         </p>
         <p>
-          - <u>Esthétique et compétition :</u> Que vous souhaitiez améliorer votre
-          esthétique physique ou vous préparer pour la compétition, ce programme
-          répondra à vos aspirations.
+            - <u>Esthétique et compétition :</u> Que vous souhaitiez améliorer
+            votre esthétique physique ou vous préparer pour la compétition, ce
+            programme répondra à vos aspirations.
         </p>
-        
-      </div>
-      <div class="programmes">
-        <div class="block">
-          <div class="titre-debutant">
+    </div>
+
+    <div class="placement">
+        <div class="programmes">
             <h2>Programme sur 5 jours</h2>
-          </div>
-          <div>
-            <img
-              src="/images/Bodybuilder/Bodybuilderprogramme1.png"
-              alt="Bodybuilderprogramme1"
-              class="debutant-image"
-            />
-          </div>
-          <div>
-            <p><u>Descriptif :</u></p>
-            <hr class="ligne-noir">
-            <p>- votre programme</p>
-            <p>- conseils et astuces nutritions</p>
-            <p>- explications des compléments alimentaires</p>
-            <p>- numéro whatsapp pour répondre à vos questions</p>
-            <hr class="ligne-noir">
-          </div>
-          <a href="">
-          <button class="bouton-rejoindre">Choisir</button>
-        </a>
+            <div>
+                <img src="/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                     class="debutant-image"/>
+            </div>
+            <div>
+                <h3><u>Descriptif :</u></h3>
+                <hr class="ligne-noir">
+                <p>- Votre programme</p>
+                <p>- Conseils et astuces nutritions</p>
+                <p>- Explications des compléments alimentaires</p>
+                <p>- Numéro whatsapp pour répondre à vos questions</p>
+                <hr class="ligne-noir">
+            </div>
+            <button type="button" class="btn-primary" data-toggle="modal" data-target="#programebody5Jours">
+                Choisir
+            </button>
+            <div class="modal fade" id="programebody5Jours" tabindex="-1" role="dialog"
+                 aria-labelledby="modalprogramebody5Jours"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalprogramebody5Jours">Programme sur 5 jours</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                                    width="440" height="2663" frameborder="0" marginheight="0" marginwidth="0">
+                                Chargement…
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="block">
-          <div class="titre-debutant">
+        <div class="programmes">
             <h2>Programme sur 6 jours</h2>
-          </div>
-          <div>
-            <img
-              src="/images/Bodybuilder.png"
-              alt="logochat"
-              class="debutant-image"
-            />
-          </div>
-          <div>
-            <p><u>Descriptif :</u></p>
-            <hr class="ligne-noir">
-            <p>- votre programme</p>
-            <p>- conseils et astuces nutritions</p>
-            <p>- explications des compléments alimentaires</p>
-            <p>- numéro whatsapp pour répondre à vos questions</p>
-            <hr class="ligne-noir">
-          </div>
-          <a href="">
-          <button class="bouton-rejoindre">Choisir</button>
-        </a>
+            <div>
+                <img src="/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                     class="debutant-image"/>
+            </div>
+            <div>
+                <h3><u>Descriptif :</u></h3>
+                <hr class="ligne-noir">
+                <p>- Votre programme</p>
+                <p>- Conseils et astuces nutritions</p>
+                <p>- Explications des compléments alimentaires</p>
+                <p>- Numéro whatsapp pour répondre à vos questions</p>
+                <hr class="ligne-noir">
+            </div>
+            <button type="button" class="btn-primary" data-toggle="modal" data-target="#programebody6Jours">
+                Choisir
+            </button>
+            <div class="modal fade" id="programebody6Jours" tabindex="-1" role="dialog"
+                 aria-labelledby="modalprogramebody6Jours"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalprogramebody6Jours">Programme sur 6 jours</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                                    width="440" height="2663" frameborder="0" marginheight="0" marginwidth="0">
+                                Chargement…
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="block">
-          <div class="titre-debutant">
+        <div class="programmes">
             <h2>Programme sur 7 jours</h2>
-          </div>
-          <div>
-            <img
-              src="/images/Bodybuilder.png"
-              alt="logochat"
-              class="debutant-image"
-            />
-          </div>
-          <div>
-            <p><u>Descriptif :</u></p>
-            <hr class="ligne-noir">
-            <p>- votre programme</p>
-            <p>- conseils et astuces nutritions</p>
-            <p>- explications des compléments alimentaires</p>
-            <p>- numéro whatsapp pour répondre à vos questions</p>
-            <hr class="ligne-noir">
-          </div>
-          <a href="">
-          <button class="bouton-rejoindre">Choisir</button>
-        </a>
+            <div>
+                <img src="/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                     class="debutant-image"/>
+            </div>
+            <div>
+                <h3><u>Descriptif :</u></h3>
+                <hr class="ligne-noir">
+                <p>- Votre programme</p>
+                <p>- Conseils et astuces nutritions</p>
+                <p>- Explications des compléments alimentaires</p>
+                <p>- Numéro whatsapp pour répondre à vos questions</p>
+                <hr class="ligne-noir">
+            </div>
+            <button type="button" class="btn-primary" data-toggle="modal" data-target="#programebody7Jours">
+                Choisir
+            </button>
+            <div class="modal fade" id="programebody7Jours" tabindex="-1" role="dialog"
+                 aria-labelledby="modalprogrammeavancé5"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalprogrammeavancé5">Programme sur 7 jours</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                                    width="440" height="2663" frameborder="0" marginheight="0" marginwidth="0">
+                                Chargement…
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+</main>
 
-
-      <hr class="ligne" />
-
-      <div class="pricing-option">
-        <h2>Prix</h2>
-        <form>
-          <label class="price-option">
-            <input type="radio" name="pricing" value="one-time" checked />
-            <span class="label-text"> Paiement unique </span>
-            <span class="price"> 5.00€ </span>
-          </label>
-
-          <label class="price-option">
-            <input type="radio" name="pricing" value="all-inclusive" />
-            <span class="label-text"> Tout compris </span>
-            <span class="price"> 15.00€/mois </span>
-          </label>
-
-          <button type="submit" class="join-button">Rejoindre</button>
-        </form>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <hr class="footer-hr" />
-      <div class="footer-content">
+<footer class="footer">
+    <hr class="footer-hr"/>
+    <div class="footer-content">
         <p>BODYSTART</p>
         <p>
-          Contacter nous:
-          <a href="mailto:bodystartpro@gmail.com">bodystartpro@gmail.com</a>
+            Contacter nous:
+            <a href="mailto:bodystartpro@gmail.com">bodystartpro@gmail.com</a>
         </p>
         <p>@2023 Bodystart</p>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- BURGER -->
+<!-- BURGER -->
 
-    <div id="maburger" class="menu-burger">
-      <div class="burger-bouton">
+<div id="maburger" class="menu-burger">
+    <div class="burger-bouton">
         <a href="/Profil/8.1.profil.programme.html" class="bouton-profil"
-          ><button>Profil</button></a
+        >
+            <button>Profil</button>
+        </a
         >
         <button>Mes programmes</button>
         <button>Gérer l'abonnement</button>
@@ -234,24 +254,33 @@
         <button>Paramètres du compte</button>
         <button>Déconnexion</button>
         <button class="fermer" id="fermer-burger">&times;</button>
-      </div>
     </div>
+</div>
 
-    <!-- BOUTON CHAT -->
+<!-- BOUTON CHAT -->
 
-    <div id="chatBox" class="chat-box">
-      <div id="chatContent"></div>
-      <form id="questionForm" onsubmit="submitQuestion(event)">
-        <input type="text" id="messageInput" placeholder="Message" />
-        <button type="submit" class="barre-message">Envoyer</button>
-      </form>
-      <span class="close-btn" onclick="toggleChatBox()">&times;</span>
-    </div>
+<!-- <div id="chatBox" class="chat-box">
+  <div id="chatContent"></div>
+  <form id="questionForm" onsubmit="submitQuestion(event)">
+    <input type="text" id="messageInput" placeholder="Message" />
+    <button type="submit" class="barre-message">Envoyer</button>
+  </form>
+  <span class="close-btn" onclick="toggleChatBox()">&times;</span>
+</div>
 
-    <button class="chat-btn" onclick="toggleChatBox()">Une question ?</button>
+<button class="chat-btn" onclick="toggleChatBox()">Une question ?</button> -->
 
-    <!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
 
-    <script src="/js/styles.js"></script>
-  </body>
+<script src="/js/styles.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
 </html>
