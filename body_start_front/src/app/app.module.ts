@@ -26,6 +26,7 @@ import {SocialLoginModule, SocialAuthServiceConfig, GoogleSigninButtonModule} fr
 import {
   GoogleLoginProvider
 } from '@abacritt/angularx-social-login';
+import { DetailProgramComponent } from './Customer/detail-program/detail-program.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {
     SuggestionsComponent,
     CoachComponent,
     ProfilComponent,
-    PageErrorComponent
+    PageErrorComponent,
+    DetailProgramComponent
   ],
   imports: [
     HttpClientModule,

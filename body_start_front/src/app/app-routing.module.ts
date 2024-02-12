@@ -14,6 +14,7 @@ import {CoachComponent} from "./Customer/coach/coach.component";
 import {TransformationComponent} from "./Customer/transformation/transformation.component";
 import {ProfilComponent} from "./Customer/profil/profil.component";
 import {PageErrorComponent} from "./page-error/page-error.component";
+import {DetailProgramComponent} from "./Customer/detail-program/detail-program.component";
 
 const routes: Routes = [
   {
@@ -30,6 +31,9 @@ const routes: Routes = [
   },
   {
     path:"program", component: ProgramComponent,
+  },
+  {
+    path:"detail/program", component: DetailProgramComponent,
   },
   {
     path:"subscription", component: SubcriptionComponent,
