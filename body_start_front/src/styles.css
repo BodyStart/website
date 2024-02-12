@@ -10,3 +10,590 @@ body {
   color: red;
   font-weight: bold;
 }
+
+
+:root {
+  --primary-color: #182024;
+  --secundary-color: #7e5837f1;
+  --third-color: wheat;
+  --fourth-color: black;
+  --fifth-color: white;
+  --sixth-color: red;
+  --seventh-color: #1e292e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.ligne {
+  border: 0;
+  height: 4px;
+  background-color: var(--secundary-color);
+  margin: 15px 0;
+}
+
+/* Tête de page */
+.header {
+  padding: 10px 40px;
+  text-align: center;
+  display: flex;
+}
+
+.header-left {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-right
+{
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  width: 104.91px;
+}
+
+.logo-bs {
+  height: 100px;
+}
+
+.header-center {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-right {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#maburger {
+  display: none;
+}
+
+#maburger.affiche-menu {
+  display: block;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.5rem; /* Largeur du menu icon */
+  height: 2rem; /* Hauteur du menu icon */
+  cursor: pointer;
+  padding: 0 25px;
+}
+
+.menu-icon span {
+  display: block;
+  height: 2px;
+  background-color: var(--secundary-color);
+}
+
+.logo-text {
+  font-size: 4.5em;
+  cursor: pointer;
+}
+
+.logo-text a {
+  text-decoration: none;
+  color: var(--secundary-color);
+  transition: color 0.3s ease;
+}
+
+.logo-text a:hover {
+  color: var(--third-color);
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav li a {
+  color: var(--secundary-color);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: var(--third-color);
+}
+
+.connexion-btn {
+  background-color: var(--secundary-color); /* Couleur de fond du bouton */
+  border: 1px solid var(--third-color);
+  color: var(--primary-color);
+  padding: 15px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connexion-btn:hover {
+  background-color: var(
+    --third-color
+  ); /* Couleur de fond du bouton au survol */
+  color: var(--primary-color);
+}
+
+.header-hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--secundary-color);
+  margin: 15px 0;
+}
+
+/* Bas de page*/
+
+.footer-hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--secundary-color);
+  margin: 15px 0;
+}
+
+.footer {
+  color: var(--secundary-color);
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content a {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* bouton chat */
+
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 18px 70px;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  border: 1px solid var(--third-color);
+  transition: background-color 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: var(
+    --third-color
+  ); /* Couleur de fond du bouton au survol */
+  color: var(--primary-color);
+}
+
+/* BURGER OUVERTURE/FERMETURE */
+
+.menu-burger {
+  display: none; /* Cache la fenêtre modale par défaut */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+}
+
+.menu-burger.affiche-menu {
+  display: block;
+}
+
+/* Style pour les boutons burger */
+.burger-bouton button,
+.fermer {
+  display: block;
+  width: 100%;
+  padding: 1.5vw;
+  font-size: 1.6vw;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-bottom: 0.1vw solid var(--secundary-color); /* Ligne de séparation entre les boutons */
+  background-color: transparent; /* Pas de couleur de fond */
+  color: var(--secundary-color); /* Couleur du texte */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet de survol */
+
+.burger-bouton button:hover {
+  background-color: var(--secundary-color); /* Couleur de fond au survol */
+  color: var(--third-color); /* Couleur du texte au survol */
+}
+
+/* Effet de survol pour le bouton de fermeture */
+
+.fermer:hover {
+  background-color: var(--secundary-color); /* Couleur de fond au survol */
+  color: var(--third-color); /* Couleur du texte au survol */
+}
+
+.bouton-profil {
+  text-decoration: none;
+}
+
+/* bouton chat */
+
+.chat-btn {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  padding: 0.8vw 3vw;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 30vw;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 0.8vw;
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 3.5vw;
+  right: 1vw;
+  max-width: 20vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0.1vw solid var(--secundary-color);
+  border-radius: 1vw 1vw 0 0;
+  box-shadow: 0 0 1vw var(--secundary-color);
+  display: none; /* Masquer la boîte de chat par défaut */
+  padding: 7% 4%;
+  overflow-y: auto;
+  max-height: 10vw; /* Hauteur maximale de la boîte de chat */
+  z-index: 1000; /* Assurez-vous que la boîte de chat apparaît au-dessus des autres éléments */
+  word-wrap: break-word;
+}
+
+.chat-box p {
+  font-size: 0.8vw;
+  color: var(--fifth-color);
+}
+
+.close-btn {
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  padding: 1vw;
+  cursor: pointer;
+  color: var(--third-color); /* Couleur du texte */
+}
+
+.chat-box button {
+  font-size: 0.8vw;
+  background-color: var(--secundary-color); /* Couleur de fond du bouton */
+  color: var(--primary-color); /* Couleur du texte */
+  border: none;
+  padding: 0.3vw;
+  margin-top: 0.3vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-box button:hover {
+  background-color: #e8b889; /* Couleur de fond du bouton au survol */
+}
+
+#chatContent {
+  font-size: 0.8vw;
+  color: var(--third-color); /* Couleur du texte dans la boîte de chat */
+}
+
+#chatBox.open {
+  display: block;
+}
+
+#questionForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#questionForm label {
+  margin-bottom: 0.5vw;
+}
+
+#questionForm input {
+  margin-bottom: 1vw;
+}
+
+.modal-content{
+  background-color: #D8CDC3;
+}
+
+.modal-open .programmes:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .nav li a {
+    color: var(--secundary-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 3.5em;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 749px) {
+  .nav li a {
+    color: var(--secundary-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .logo-text {
+    font-size: 3em;
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .section-présentation h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secundary-color);
+    font-size: 2em;
+  }
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Existing styles for larger screens can remain outside the media query */
+
+.nav23 {
+  display: none;
+}
+
+/* Style for close button */
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  text-align: right;
+}
+
+/* Remove list bullet points and padding */
+.nav23 ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the hamburger when active */
+.hamburger.active {
+  color: #fff; /* Example style change */
+}
+
+.nav23 ul li a, .nav23 ul li a:visited {
+  color: #fff; /* Adjust if you have a different preferred color */
+  text-decoration: none;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+
+@media (max-width: 700px) {
+  .nav {
+    display: none; /* Hide the original nav on smaller screens */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger button on smaller screens */
+  }
+
+  /* The nav23 will still be hidden until toggled by the hamburger button */
+  .nav23 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* This class is added to nav23 when the hamburger is clicked */
+  .nav23-active {
+    transform: translateX(0);
+  }
+  .header-right {
+    width: auto;
+    /* width: 104.91px; */
+  }
+  .logo-text {
+    font-size: 3em;
+    cursor: pointer;
+  }
+  .header-right {
+    padding: 0px;
+  }
+  .header-left {
+    padding: 0px;
+  }
+  .wrapper .icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  .Accueil-background-image {
+    background: url(/images/accueil.png);
+    height: 550px !important;
+    background-size: auto !important;
+    background-position: top !important;
+    background-repeat: no-repeat;
+  }
+  .section-titre a {
+    padding: 0 px;
+  }
+  .section-titre h2 {
+    font-size: 3em !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 0px
+  }
+  .logo-bs {
+    height: 80px;
+    width: 80px;
+  }
+  .description h2 {
+    text-align: center;
+  }
+  .programmes {
+    width: 370px;
+  }
+  .pricing-card {
+    width: 330px;
+  }
+}
+
+.liststyle1 {
+  padding: 10px;
+}
+
+.liststyle1 a:hover {
+  color: #ff9900; /* Change the text color on hover */
+  background-color: #d3cdcd; /* Add a subtle background color on hover */
+  transform: scale(1.05); /* Slightly increase the size */
+  transition: all 0.3s ease; /* Smooth transition for the effect */
+}
+
+.liststyle1 a:active {
+  transform: scale(0.95); /* Slightly decrease the size */
+}
+
+.liststyle1 a.clicked {
+  color: #ff9900; /* Example color for a clicked link */
+  font-weight: bold; /* Make clicked link bold */
+}
+
+.center_all {
+  position: relative;
+  top: -550px;
+}
+
+.nav li {
+  transition: transform 0.5s ease; /* Adjust time as needed */
+}
+
+.nav li:hover {
+  transform: scale(1.1); /* Adjust size as needed */
+}
+
+.logo-text {
+
+  transition: transform 0.5s ease; /* Adjust time as needed */
+}
+
+.logo-text:hover {
+  transform: scale(1.1); /* Adjust size as needed */
+}

@@ -1,40 +1,42 @@
 <header class="header">
-
   <div class="header-left">
-    <img src="assets/images/logo-bodystart.png" alt="logo-bodystart" class="logo-bs">
+    <img
+      src="./assets/images/logo-bodystart.png"
+      alt="logo-bodystart"
+      class="logo-bs"
+    />
   </div>
 
   <div class="header-center">
     <div class="logo-text">
-      <a href="index.html">Bodystart</a>
+      <a routerLink="">Bodystart</a>
     </div>
-    <nav class="nav">
+    <nav class="nav row">
       <ul>
-        <li class="nav-item"><a routerLink=""  class="nav-link">Accueil</a></li>
-        <li class="nav-item"><a routerLink="/about"  class="nav-link">Qui suis-je ?</a></li>
-        <li class="nav-item"><a routerLink="/program"  class="nav-link">Programmes</a></li>
-        <li class="nav-item"><a routerLink="/subscription"  class="nav-link">Abonnement</a></li>
-        <li class="nav-item"><a routerLink="/transformations"  class="nav-link">Transformations</a></li>
-        <li class="nav-item"><a routerLink="/suggestions"  class="nav-link">Vos suggestions</a></li>
-<!--        <li class="nav-item"><a routerLink="/coach"  class="nav-link">Membres (coach)</a></li>-->
+        <li><a routerLink="" class="active">Accueil</a></li>
+        <li><a routerLink="/about">Qui suis-je ?</a></li>
+        <li><a routerLink="/program">Programmes</a></li>
+        <li><a routerLink="/subscription">Abonnement</a></li>
+        <!-- <li><a href="5.transformations.html">Transformations</a></li>
+        <li><a href="6.vossuggestions.html">Vos suggestions</a></li>
+        <li><a href="7.membres.html">Membres (coach)</a></li> -->
       </ul>
     </nav>
   </div>
 
-  <div class="header-right" id="headerRight">
-    <ng-container *ngIf="!token && !user; else loggedIn">
-      <a routerLink="/login" class="nav-link">
-        <button id="boutonConnexion" class="connexion-btn">Connexion</button>
-      </a>
-    </ng-container>
-    <ng-template #loggedIn>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-<!--          <button class="connexion-btn btn btn-link nav-link" (click)="logout()">Déconnexion</button>-->
-          <button class="connexion-btn btn btn-link nav-link" (click)="logoutGoogle()">logoutGoogle</button>
-        </li>
+  <div class="header-right">
+    <button class="hamburger" aria-label="Open navigation menu">☰</button>
+    <nav class="nav23">
+      <div class="close-btn">✖</div>
+      <ul>
+        <li class="liststyle1"><a href="../index.html" class="active">Accueil</a></li>
+        <li class="liststyle1"> <a href="2.quisuisje.html">Qui suis-je ?</a></li>
+        <li class="liststyle1"> <a href="3.0.programme.html">Programmes</a></li>
+        <li class="liststyle1"> <a href="4.abonnement.html">Abonnement</a></li>
       </ul>
-    </ng-template>
+    </nav>
   </div>
-
+  <!-- <div class="header-right">
+    <button id="boutonConnexion" class="connexion-btn">Connexion</button>
+  </div> -->
 </header>
