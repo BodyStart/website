@@ -508,10 +508,10 @@ body {
 }
 .Accueil-background-image {
   background: url(/images/accueil.png);
-  height: 550px !important;
   background-size: auto !important;
   background-position: top !important;
   background-repeat: no-repeat;
+  height: 45vw;
 }
 .section-titre a {
   padding: 0 px;
