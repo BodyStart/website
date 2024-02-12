@@ -19,15 +19,12 @@ const routes: Routes = [
   {
     path:"", component: HomeComponent,
   },
-  {
-    path:"admin/exercises", component: ExerciseComponent,
-  },
-  {
+  /*{
     path:"login", component: LoginComponent,
   },
   {
     path:"register", component: RegisterComponent,
-  },
+  },*/
   {
     path:"about", component: AboutComponent,
   },
@@ -37,7 +34,7 @@ const routes: Routes = [
   {
     path:"subscription", component: SubcriptionComponent,
   },
-  {
+  /*{
     path:"transformations", component: TransformationComponent,
   },
   {
@@ -48,11 +45,8 @@ const routes: Routes = [
   },
   {
     path:"coach", component: CoachComponent,
-  },
-  {
-    path:"subscription", component: SubcriptionComponent,
-  },
-  {
+  },*/
+  /*{
     path:"reset/password", component: ResetPasswordComponent,
   },
   {
@@ -60,7 +54,7 @@ const routes: Routes = [
   },
   {
     path:"error", component: PageErrorComponent,
-  },
+  },*/
 ];
 
 @NgModule({
