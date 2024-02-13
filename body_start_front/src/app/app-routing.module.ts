@@ -33,7 +33,7 @@ const routes: Routes = [
     path:"program", component: ProgramComponent,
   },
   {
-    path:"detail/program", component: DetailProgramComponent,
+    path:"detail/program/:id", component: DetailProgramComponent,
   },
   {
     path:"subscription", component: SubcriptionComponent,

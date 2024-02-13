@@ -1,56 +1,202 @@
 <main>
+  <div class="description">
+    <h2><u>Description des programme Débutants:</u></h2>
+    <p>
+      Découvrez nos programmes de bodybuilding débutant basés sur 3/4/5
+      jours, spécialement conçus pour les personnes débutantes qui
+      souhaitent assurer une prise de muscle globale sur l'ensemble du
+      corps. Ce programme structuré vous permettra de travailler tous les
+      groupes musculaires de manière équilibrée, favorisant ainsi une
+      progression harmonieuse de votre développement physique.
+    </p>
+    <p><u>Avantages :</u></p>
+    <p>
+      - <u>Full Body sur 3/4/5 jours :</u> Notre programme est conçu pour vous
+      entraîner sur l'ensemble du corps en seulement 3/4/5 jours, vous
+      permettant ainsi d'optimiser votre temps d'entraînement.
+    </p>
+    <p>
+      - <u>Prise de muscle globale :</u> L'approche Full Body vous permettra
+      de cibler tous les groupes musculaires, garantissant une prise de
+      muscle équilibrée et harmonieuse sur l'entièreté du corps.
+    </p>
+    <p>
+      - <u>Adaptation pour débutants :</u> Chaque séance est adaptée pour
+      les débutants, avec des exercices appropriés,
+      favorisant ainsi une progression sûre et efficace.
+    </p>
+    <p>
+      - <u>Encadrement pour le succès :</u> Notre équipe d'experts sera là
+      pour vous guider, répondre à vos questions et vous soutenir tout au
+      long de votre parcours de prise de muscle.
+    </p>
+  </div>
+
   <div class="placement">
-    <div class="programme">
-      <img
-        src="./assets/images/Débutant.png"
-        alt="programme1"
-        class="programme-image"
-      />
-      <h2>Programme de musculation Débutant</h2>
-      <span class="price">€25.00</span>
+    <div class="programmes">
+      <h2>Programme sur 3 jours</h2>
+      <div>
+        <img [src]="getImageUrl(currentId, 1)" alt="" class="debutant-image"/>
+      </div>
+      <div>
+        <h3><u>Descriptif :</u></h3>
+        <hr class="ligne-noir">
+        <p>- Votre programme</p>
+        <p>- Conseils et astuces nutritions</p>
+        <p>- Explications des compléments alimentaires</p>
+        <p>- Numéro whatsapp pour répondre à vos questions</p>
+        <hr class="ligne-noir">
+      </div>
+      <button type="button" class="btn-primary" data-toggle="modal" data-target="#programmedébutant3Jours">
+        Choisir
+      </button>
+      <div class="modal fade" id="programmedébutant3Jours" tabindex="-1" role="dialog"
+           aria-labelledby="modalprogrammedébutant3"
+           aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalprogrammedébutant3">Programme sur 3 jours</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                width="300" height="800" frameborder="0" marginheight="0" marginwidth="0">
+                Chargement…
+              </iframe>
+            </div>
 
-      <a href="/Programme/3.1.debutant.html">
-        <button class="btn-primary">En savoir plus</button>
-      </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="programme">
-      <img
-        src="./assets/images/Avancée.png"
-        alt="programme1"
-        class="programme-image"
-      />
-      <h2>Programme de musculation Avancé</h2>
-      <span class="price">€30.00</span>
+    <div class="programmes">
+      <h2>Programme sur 4 jours</h2>
+      <div>
+        <img [src]="getImageUrl(currentId, 2)" alt="" class="debutant-image"/>
+      </div>
+      <div>
+        <h3><u>Descriptif :</u></h3>
+        <hr class="ligne-noir">
+        <p>- Votre programme</p>
+        <p>- Conseils et astuces nutritions</p>
+        <p>- Explications des compléments alimentaires</p>
+        <p>- Numéro whatsapp pour répondre à vos questions</p>
+        <hr class="ligne-noir">
+      </div>
+      <button type="button" class="btn-primary" data-toggle="modal" data-target="#programmedébutant4Jours">
+        Choisir
+      </button>
+      <div class="modal fade" id="programmedébutant4Jours" tabindex="-1" role="dialog"
+           aria-labelledby="modalprogrammedébutant4"
+           aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalprogrammedébutant4">Programme sur 4 jours</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                width="300" height="800" frameborder="0" marginheight="0" marginwidth="0">
+                Chargement…
+              </iframe>
+            </div>
 
-      <a href="/Programme/3.2.avance.html">
-        <button class="btn-primary">En savoir plus</button>
-      </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="programme">
-      <img
-        src="./assets/images/Bodybuilder.png"
-        alt="programme1"
-        class="programme-image"
-      />
-      <h2>Programme de musculation Bodybuilder</h2>
-      <span class="price">€35.00</span>
+    <div class="programmes">
+      <h2>Programme sur 5 jours</h2>
+      <div>
+        <img [src]="getImageUrl(currentId, 3)" alt="" class="debutant-image"/>
+      </div>
+      <div>
+        <h3><u>Descriptif :</u></h3>
+        <hr class="ligne-noir">
+        <p>- Votre programme</p>
+        <p>- Conseils et astuces nutritions</p>
+        <p>- Explications des compléments alimentaires</p>
+        <p>- Numéro whatsapp pour répondre à vos questions</p>
+        <hr class="ligne-noir">
+      </div>
+      <button type="button" class="btn-primary" data-toggle="modal" data-target="#programmedébutant5Jours">
+        Choisir
+      </button>
+      <div class="modal fade" id="programmedébutant5Jours" tabindex="-1" role="dialog"
+           aria-labelledby="modalprogrammedébutant5"
+           aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalprogrammedébutant5">Programme sur 5 jours</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
+                width="300" height="800" frameborder="0" marginheight="0" marginwidth="0">
+                Chargement…
+              </iframe>
+            </div>
 
-      <a href="/Programme/3.3.bodybuilder.html">
-        <button class="btn-primary">En savoir plus</button>
-      </a>
-    </div>
-    <div class="programme">
-      <img
-        src="./assets/images/Personnalisé.png"
-        alt="programme1"
-        class="programme-image"
-      />
-      <h2>Programme de musculation Personnalisé</h2>
-      <span class="price">€50.00</span>
+            <div>
+              <img
+                [src]=""
+                alt="Débutantprogramme2"
+                class="debutant-image"
+              />
+            </div>
+            <div>
+              <p><u>Descriptif :</u></p>
+              <hr class="ligne-noir">
+              <p>- Votre programme</p>
+              <p>- Conseils et astuces nutritions</p>
+              <p>- Explications des compléments alimentaires</p>
+              <p>- Numéro whatsapp pour répondre à vos questions</p>
+              <hr class="ligne-noir">
+            </div>
+            <a href="">
+              <button class="bouton-rejoindre">Choisir</button>
+            </a>
+          </div>
 
-      <a href="/Programme/3.4.personnalise.html">
-        <button class="btn-primary">En savoir plus</button>
-      </a>
+          <div class="block">
+            <div class="titre-debutant">
+              <h2>Programme sur 5 jours</h2>
+            </div>
+
+            <div>
+              <img
+                [src]=""
+                alt="Débutantprogramme3"
+                class="debutant-image"
+              />
+            </div>
+            <div>
+              <p><u>Descriptif :</u></p>
+              <hr class="ligne-noir">
+              <p>- Votre programme</p>
+              <p>- Conseils et astuces nutritions</p>
+              <p>- Explications des compléments alimentaires</p>
+              <p>- Numéro whatsapp pour répondre à vos questions</p>
+              <hr class="ligne-noir">
+            </div>
+            <a href="">
+              <button class="bouton-rejoindre">Choisir</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
