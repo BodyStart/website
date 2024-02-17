@@ -1,0 +1,20 @@
+.demande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #182024;
+}
+
+iframe {
+    width: 80%;
+    max-width: 600px;
+    height: 70vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff; /* Couleur de fond de l'iframe */
+    margin: auto; /* Pour centrer l'iframe horizontalement */
+}
+
+/* Ajoutez vos autres styles selon vos besoins */

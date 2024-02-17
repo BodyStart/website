@@ -57,10 +57,10 @@ function Programme() {
                         className="programme-image"
                     />
                     <h2>Programme de musculation Personnalisé</h2>
-                    <span class="price">€50.00</span>
+                    <span className="price">€50.00</span>
 
                     <a onClick={(event) => handleClick(event, '/programme/personnalise')}>
-                        <button class="btn-primary">En savoir plus</button>
+                        <button className="btn-primary">En savoir plus</button>
                     </a>
                 </div>
             </div>

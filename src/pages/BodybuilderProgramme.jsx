@@ -1,8 +1,15 @@
 import '../assets/css/sousprogramme.css';
+import { useNavigate } from 'react-router-dom';
 
 function BodybuilderProgramme() {
+    const navigate = useNavigate();
+
+    function handleClick(event, path) {
+        event.preventDefault();
+        navigate(path);
+    }
     return (
-        <main>
+        <main className='sousprogramme'>
             <div className="description">
                 <h2><u>Description des programmes Bodybuilders :</u></h2>
                 <p>
@@ -42,121 +49,58 @@ function BodybuilderProgramme() {
                     <h2>Programme sur 5 jours</h2>
                     <div>
                         <img src="/src/assets//images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
-                             className="debutant-image"/>
+                            className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                         <p>- Votre programme</p>
                         <p>- Conseils et astuces nutritions</p>
                         <p>- Explications des compléments alimentaires</p>
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal" data-target="#programebody5Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programebody5Jours" tabIndex="-1" role="dialog"
-                         aria-labelledby="modalprogramebody5Jours"
-                         aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogramebody5Jours">Programme sur 5 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
-                                            width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="programmes">
                     <h2>Programme sur 6 jours</h2>
                     <div>
                         <img src="/src/assets//images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
-                             className="debutant-image"/>
+                            className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                         <p>- Votre programme</p>
                         <p>- Conseils et astuces nutritions</p>
                         <p>- Explications des compléments alimentaires</p>
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal" data-target="#programebody6Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programebody6Jours" tabIndex="-1" role="dialog"
-                         aria-labelledby="modalprogramebody6Jours"
-                         aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogramebody6Jours">Programme sur 6 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
-                                            width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="programmes">
                     <h2>Programme sur 7 jours</h2>
                     <div>
                         <img src="/src/assets/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
-                             className="debutant-image"/>
+                            className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                         <p>- Votre programme</p>
                         <p>- Conseils et astuces nutritions</p>
                         <p>- Explications des compléments alimentaires</p>
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal" data-target="#programebody7Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programebody7Jours" tabIndex="-1" role="dialog"
-                         aria-labelledby="modalprogramebody7Jours"
-                         aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogramebody7Jours">Programme sur 7 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
-                                            width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
