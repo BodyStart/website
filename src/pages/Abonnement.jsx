@@ -1,4 +1,4 @@
-import '../assets/css/abonnement.css'
+import '../../public/assets/css/abonnement.css'
 
 function Abonnement() {
     return (

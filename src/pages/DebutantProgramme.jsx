@@ -1,4 +1,4 @@
-import '../assets/css/sousprogramme.css';
+import '../../public/assets/css/sousprogramme.css';
 import { useNavigate } from 'react-router-dom';
 function DebutantProgramme() {
     const navigate = useNavigate();
@@ -45,7 +45,7 @@ function DebutantProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 3 jours</h2>
                     <div>
-                        <img src="/src/assets/images/Débutant/Débutantprogramme1.png" alt="Débutantprogramme1"
+                        <img src="/public/assets/images/Débutant/Débutantprogramme1.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -64,7 +64,7 @@ function DebutantProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 4 jours</h2>
                     <div>
-                        <img src="/src/assets/images/Débutant/Débutantprogramme2.png" alt="Débutantprogramme2"
+                        <img src="/public/assets/images/Débutant/Débutantprogramme2.png" alt="Débutantprogramme2"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -83,7 +83,7 @@ function DebutantProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 5 jours</h2>
                     <div>
-                        <img src="/src/assets/images/Débutant/Débutantprogramme3.png" alt="Débutantprogramme2" className="debutant-image" />
+                        <img src="/public/assets/images/Débutant/Débutantprogramme3.png" alt="Débutantprogramme2" className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>

@@ -1,7 +1,7 @@
 /* milieu de page  */
 
 .Accueil-background-image {
-  background: url(/src/assets/images/accueil.png);
+  background: url(../images/accueil.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@
 
 @media (max-width: 1100px) {
   .Accueil-background-image {
-    background: url(/src/assets/images/accueil.png);
+    background: url(../images/accueil.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

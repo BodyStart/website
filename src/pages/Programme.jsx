@@ -1,4 +1,4 @@
-import '../assets/css/programme.css'
+import '../../public/assets/css/programme.css'
 import {useNavigate} from "react-router-dom";
 
 function Programme() {
@@ -13,7 +13,7 @@ function Programme() {
             <div className="placement">
                 <div className="programme">
                     <img
-                        src="/src/assets/images/Débutant.png"
+                        src="/public/assets/images/Débutant.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -26,7 +26,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/src/assets//images/Avancée.png"
+                        src="/public/assets/images/Avancée.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -39,7 +39,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/src/assets//images/Bodybuilder.png"
+                        src="/public/assets/images/Bodybuilder.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -52,7 +52,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/src/assets//images/Personnalisé.png"
+                        src="/public/assets/images/Personnalisé.png"
                         alt="programme1"
                         className="programme-image"
                     />

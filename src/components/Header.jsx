@@ -36,7 +36,7 @@ function Header() {
             <header className="header">
                 <div className="header-left">
                     <img
-                        src="src/assets/images/logo-bodystart.png"
+                        src="/public/assets/images/logo-bodystart.png"
                         alt="logo-bodystart"
                         className="logo-bs"
                     />

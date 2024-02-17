@@ -1,5 +1,5 @@
 
-import '../assets/css/Home.css';
+import '../../public/assets/css/Home.css';
 
 function Home() {
     return (
@@ -14,7 +14,7 @@ function Home() {
                 <div className="all-programme">
                     <div className="programme">
                         <img
-                            src="/src/assets/images/Débutant.png"
+                            src="/public/assets/images/Débutant.png"
                             alt="programme1"
                             className="programme-image"
                         />
@@ -29,7 +29,7 @@ function Home() {
 
                     <div className="programme">
                         <img
-                            src="/src/assets/images/Avancée.png"
+                            src="/public/assets/images/Avancée.png"
                             alt="programme2"
                             className="programme-image"
                         />
@@ -44,7 +44,7 @@ function Home() {
 
                     <div className="programme">
                         <img
-                            src="/src/assets/images/Bodybuilder.png"
+                            src="/public/assets/images/Bodybuilder.png"
                             alt="programme3"
                             className="programme-image"
                         />
@@ -59,7 +59,7 @@ function Home() {
 
                     <div className="programme">
                         <img
-                            src="/src/assets/images/Personnalisé.png"
+                            src="/public/assets/images/Personnalisé.png"
                             alt="programme4"
                             className="programme-image"
                         />

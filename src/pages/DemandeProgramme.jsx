@@ -1,4 +1,4 @@
-import '../assets/css/demande.css'
+import '../../public/assets/css/demande.css'
 
 function DemandeProgramme() {
     return (

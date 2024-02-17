@@ -1,4 +1,4 @@
-import '../assets/css/sousprogramme.css';
+import '../../public/assets/css/sousprogramme.css';
 import { useNavigate } from 'react-router-dom';
 
 function BodybuilderProgramme() {
@@ -48,7 +48,7 @@ function BodybuilderProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 5 jours</h2>
                     <div>
-                        <img src="/src/assets//images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                        <img src="/public/assets/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -67,7 +67,7 @@ function BodybuilderProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 6 jours</h2>
                     <div>
-                        <img src="/src/assets//images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                        <img src="/public/assets/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -86,7 +86,7 @@ function BodybuilderProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 7 jours</h2>
                     <div>
-                        <img src="/src/assets/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
+                        <img src="/public/assets/images/Bodybuilder/Bodybuilderprogramme1.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>

@@ -1,4 +1,4 @@
-import '../assets/css/sousprogramme.css';
+import '../../public/assets/css/sousprogramme.css';
 import { useNavigate } from 'react-router-dom';
 
 function PersonnaliseProgramme() {
@@ -47,7 +47,7 @@ function PersonnaliseProgramme() {
                 <div className="programmes">
                     <h2>Programme adaptatif</h2>
                     <div>
-                        <img src="/src/assets/images/Personnalisé.png" alt="Débutantprogramme1" className="debutant-image"/>
+                        <img src="/public/assets/images/Personnalisé.png" alt="Débutantprogramme1" className="debutant-image"/>
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
