@@ -2,7 +2,7 @@ import '../assets/css/programme.css'
 
 function Programme() {
     return (
-        <main>
+        <main className="programmeLayout">
             <div className="placement">
                 <div className="programme">
                     <img
@@ -10,7 +10,7 @@ function Programme() {
                         alt="programme1"
                         className="programme-image"
                     />
-                    <h2>Programme de musculation Débutant</h2>
+                    <h2 >Programme de musculation Débutant</h2>
                     <span className="price">€25.00</span>
 
                     <a href="/Programme/3.1.debutant.html">
