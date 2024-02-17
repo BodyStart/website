@@ -2,7 +2,7 @@ import '../assets/css/abonnement.css'
 
 function Abonnement() {
     return (
-        <main>
+        <main className="abonnement">
             <div className="placement">
                 <div className="pricing-card">
                     <h2>Entraînement</h2>
