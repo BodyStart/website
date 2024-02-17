@@ -499,7 +499,7 @@ body {
   }
 
   .Accueil-background-image {
-    background: url(/src/assets/images/accueil.png);
+    background: url(/assets/images/accueil.png)
     background-size: cover !important;
     background-position: top !important;
     background-repeat: no-repeat;
