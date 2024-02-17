@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Quisuije from './pages/Quisuije';
 import Programme from './pages/Programme';
 import Abonnement from './pages/Abonnement';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/abonnement" element={<Abonnement />} />
                 <Route path="/adam-charles-bio" element={<Quisuije />} />
             </Routes>
+            <Footer/>
         </>
     )
 }
