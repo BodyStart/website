@@ -48,7 +48,7 @@ function AvanceeProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 4 jours</h2>
                     <div>
-                        <img src="/public/assets/images/Avancée/Avancéprogramme1.png" alt="Débutantprogramme1"
+                        <img src="/assets/images/Avancée/Avancéprogramme1.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -67,7 +67,7 @@ function AvanceeProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 5 jours</h2>
                     <div>
-                        <img src="/public/assets/images/Avancée/Avancéprogramme2.png" alt="Débutantprogramme1"
+                        <img src="/assets/images/Avancée/Avancéprogramme2.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>
@@ -87,7 +87,7 @@ function AvanceeProgramme() {
                 <div className="programmes">
                     <h2>Programme sur 6 jours</h2>
                     <div>
-                        <img src="/public/assets/images/Avancée/Avancéprogramme3.png" alt="Débutantprogramme1"
+                        <img src="/assets/images/Avancée/Avancéprogramme3.png" alt="Débutantprogramme1"
                             className="debutant-image" />
                     </div>
                     <div>

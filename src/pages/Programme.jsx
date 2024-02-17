@@ -13,7 +13,7 @@ function Programme() {
             <div className="placement">
                 <div className="programme">
                     <img
-                        src="/public/assets/images/Débutant.png"
+                        src="/assets/images/Débutant.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -26,7 +26,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/public/assets/images/Avancée.png"
+                        src="/assets/images/Avancée.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -39,7 +39,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/public/assets/images/Bodybuilder.png"
+                        src="/assets/images/Bodybuilder.png"
                         alt="programme1"
                         className="programme-image"
                     />
@@ -52,7 +52,7 @@ function Programme() {
                 </div>
                 <div className="programme">
                     <img
-                        src="/public/assets/images/Personnalisé.png"
+                        src="/assets/images/Personnalisé.png"
                         alt="programme1"
                         className="programme-image"
                     />
