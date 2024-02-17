@@ -9,6 +9,7 @@ import DebutantProgramme from "./pages/DebutantProgramme.jsx";
 import AvanceeProgramme from "./pages/AvanceeProgramme.jsx";
 import BodybuilderProgramme from "./pages/BodybuilderProgramme.jsx";
 import PersonnaliseProgramme from "./pages/PersonnaliseProgramme.jsx";
+import DemandeProgramme from "./pages/DemandeProgramme.jsx";
 import Footer from './components/Footer';
 
 
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/programme/avancee" element={<AvanceeProgramme />} />
                 <Route path="/programme/bodybuilder" element={<BodybuilderProgramme />} />
                 <Route path="/programme/personnalise" element={<PersonnaliseProgramme />} />
+                <Route path="/programme/demande" element={<DemandeProgramme />} />
             </Routes>
             <Footer/>
         </>

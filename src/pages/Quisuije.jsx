@@ -104,7 +104,7 @@ function Quisuije() {
                                 souvent perçu comme un
                                 obstacle, peut être apprivoisé et transformé en carburant pour notre motivation.</p>
                         </div>
-                        <div class="timeline-component timeline-content">
+                        <div className="timeline-component timeline-content">
                             <p>Le Bodybuilding, c'est donc bien plus qu'un simple sport. C'est une
                                 quête artistique, une
                                 passion qui nous pousse à repousser nos limites et à modeler notre corps comme un sculpteur crée
@@ -116,10 +116,10 @@ function Quisuije() {
                                 dévouement, de notre persévérance et de notre amour pour cet art vivant qu'est le
                                 bodybuilding.</p>
                         </div>
-                        <div class="timeline-middle">
-                            <div class="timeline-circle"></div>
+                        <div className="timeline-middle">
+                            <div className="timeline-circle"></div>
                         </div>
-                        <div class="timeline-empty"></div>
+                        <div className="timeline-empty"></div>
                     </div>
                 </section>
 

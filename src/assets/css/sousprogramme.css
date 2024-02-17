@@ -1,4 +1,4 @@
-.description h2 {
+.sousprogramme .description h2 {
   margin-left: 11.7%;
   margin-top: 3%;
   text-align: left;
@@ -7,7 +7,7 @@
   font-size: 2em;
 }
 
-.description p {
+.sousprogramme .description p {
   margin-left: 11.7%;
   margin-right: 11.7%;
   margin-bottom: 1%;
@@ -17,7 +17,7 @@
   font-size: 1.25em;
 }
 
-.ligne-noir {
+.sousprogramme .ligne-noir {
   border: 0;
   height: 1px;
   background-color: var(--primary-color);
@@ -25,7 +25,7 @@
 }
 
 
-.placement {
+.sousprogramme .placement {
   display: flex;
   flex-wrap: wrap;
   gap: 50px 100px;
@@ -37,7 +37,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.programmes {
+.sousprogramme .programmes {
   width: 400px;
   height: 825px;
   background-color: var(--seventh-color);
@@ -52,18 +52,19 @@
   align-items: center;
   text-align: center;
 }
-.programmes:hover {
+
+.sousprogramme .programmes:hover {
   transform: scale(1.1);
   box-shadow: 0 0px 40px var(--secundary-color);
 }
 
-.debutant-image {
+.sousprogramme .debutant-image {
   width: 100%;
   display: block;
   height: auto;
 }
 
-h2 {
+.sousprogramme h2 {
   color: var(--fifth-color);
   margin: 0;
   text-align: center;
@@ -71,15 +72,15 @@ h2 {
   margin: 10px 20px;
 }
 
-h3 {
+.sousprogramme h3 {
   color: var(--secundary-color);
 }
 
-.programmes p {
+.sousprogramme .programmes p {
   color: var(--fifth-color);
 }
 
-.btn-primary {
+.sousprogramme .btn-primary {
   background: var(--secundary-color);
   color: var(--fifth-color);
   padding: 10px 30px;
@@ -92,17 +93,14 @@ h3 {
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.sousprogramme .btn-primary:hover {
   background-color: var(--fifth-color);
   color: var(--secundary-color);
 }
 
 @media (max-width: 550px) {
-.programmes {
-  width: 370px;
-}
-.description h2 {
-  text-align: center !important;
-  margin-left: 0px;
-}
+  .sousprogramme .description h2 {
+    text-align: center !important;
+    margin-left: 0px;
+  }
 }

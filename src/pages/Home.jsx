@@ -5,75 +5,75 @@ function Home() {
     return (
         <>
             <main>
-                <div class="Accueil-background-image"></div>
-                <div class="section-titre">
+                <div className="Accueil-background-image"></div>
+                <div className="section-titre">
                     <a href="3.0.programme.html"
                     ><h2><u>Transforme toi avec nos programmes :</u></h2></a
                     >
                 </div>
-                <div class="all-programme">
-                    <div class="programme">
+                <div className="all-programme">
+                    <div className="programme">
                         <img
                             src="/src/assets/images/Débutant.png"
                             alt="programme1"
-                            class="programme-image"
+                            className="programme-image"
                         />
-                        <div class="programme-titre">
+                        <div className="programme-titre">
                             <h3>Débutant</h3>
                             <hr />
                             <a href="/Programme/3.1.debutant.html">
-                                <button class="bouton-rejoindre">En savoir plus</button>
+                                <button className="bouton-rejoindre">En savoir plus</button>
                             </a>
                         </div>
                     </div>
 
-                    <div class="programme">
+                    <div className="programme">
                         <img
                             src="/src/assets/images/Avancée.png"
                             alt="programme2"
-                            class="programme-image"
+                            className="programme-image"
                         />
-                        <div class="programme-titre">
+                        <div className="programme-titre">
                             <h3>Avancée</h3>
                             <hr />
                             <a href="/Programme/3.2.avance.html">
-                                <button class="bouton-rejoindre">En savoir plus</button>
+                                <button className="bouton-rejoindre">En savoir plus</button>
                             </a>
                         </div>
                     </div>
 
-                    <div class="programme">
+                    <div className="programme">
                         <img
                             src="/src/assets/images/Bodybuilder.png"
                             alt="programme3"
-                            class="programme-image"
+                            className="programme-image"
                         />
-                        <div class="programme-titre">
+                        <div className="programme-titre">
                             <h3>Bodybuilder</h3>
                             <hr />
                             <a href="/Programme/3.3.bodybuilder.html">
-                                <button class="bouton-rejoindre">En savoir plus</button>
+                                <button className="bouton-rejoindre">En savoir plus</button>
                             </a>
                         </div>
                     </div>
 
-                    <div class="programme">
+                    <div className="programme">
                         <img
                             src="/src/assets/images/Personnalisé.png"
                             alt="programme4"
-                            class="programme-image"
+                            className="programme-image"
                         />
-                        <div class="programme-titre">
+                        <div className="programme-titre">
                             <h3>Personnalisé</h3>
                             <hr />
                             <a href="/Programme/3.4.personnalise.html">
-                                <button class="bouton-rejoindre">En savoir plus</button>
+                                <button className="bouton-rejoindre">En savoir plus</button>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="section-présentation">
+                <div className="section-présentation">
                     <h3><u>Nos programmes sont conçus de la manière suivante :</u></h3>
                     <p>
                         <u>Débutant :</u> L'objectif de ce programme est de vous créer une

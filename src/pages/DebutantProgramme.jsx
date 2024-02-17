@@ -1,8 +1,14 @@
 import '../assets/css/sousprogramme.css';
-
+import { useNavigate } from 'react-router-dom';
 function DebutantProgramme() {
+    const navigate = useNavigate();
+
+    function handleClick(event, path) {
+        event.preventDefault();
+        navigate(path);
+    }
     return (
-        <main>
+        <main className='sousprogramme'>
             <div className="description">
                 <h2><u>Description des programmes Débutants:</u></h2>
                 <p>
@@ -35,92 +41,49 @@ function DebutantProgramme() {
                     long de votre parcours de prise de muscle.
                 </p>
             </div>
-
             <div className="placement">
                 <div className="programmes">
                     <h2>Programme sur 3 jours</h2>
                     <div>
                         <img src="/src/assets/images/Débutant/Débutantprogramme1.png" alt="Débutantprogramme1"
-                             className="debutant-image"/>
+                            className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                         <p>- Votre programme</p>
                         <p>- Conseils et astuces nutritions</p>
                         <p>- Explications des compléments alimentaires</p>
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal"
-                            data-target="#programmedébutant3Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programmedébutant3Jours" tabIndex="-1" role="dialog"
-                         aria-labelledby="modalprogrammedébutant3" aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogrammedébutant3">Programme sur 3 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
-                                        width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="programmes">
                     <h2>Programme sur 4 jours</h2>
                     <div>
                         <img src="/src/assets/images/Débutant/Débutantprogramme2.png" alt="Débutantprogramme2"
-                             className="debutant-image"/>
+                            className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                         <p>- Votre programme</p>
                         <p>- Conseils et astuces nutritions</p>
                         <p>- Explications des compléments alimentaires</p>
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
-                        <hr className="ligne-noir"/>
+                        <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal"
-                            data-target="#programmedébutant4Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programmedébutant4Jours" tabIndex="-1" role="dialog"
-                         aria-labelledby="modalprogrammedébutant4" aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogrammedébutant4">Programme sur 4 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true"
-                                        width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="programmes">
                     <h2>Programme sur 5 jours</h2>
                     <div>
-                        <img src="/src/assets/images/Débutant/Débutantprogramme3.png" alt="Débutantprogramme2" className="debutant-image"/>
+                        <img src="/src/assets/images/Débutant/Débutantprogramme3.png" alt="Débutantprogramme2" className="debutant-image" />
                     </div>
                     <div>
                         <h3><u>Descriptif :</u></h3>
@@ -131,26 +94,9 @@ function DebutantProgramme() {
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
                         <hr className="ligne-noir" />
                     </div>
-                    <button type="button" className="btn-primary" data-toggle="modal" data-target="#programmedébutant4Jours">
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
                         Choisir
                     </button>
-                    <div className="modal fade" id="programmedébutant4Jours" tabIndex="-1" role="dialog" aria-labelledby="modalprogrammedébutant4" aria-hidden="true">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="modalprogrammedébutant4">Programme sur 5 jours</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_0ja9vy6R3NT2VQV7Gatvk8rMjOIO4tS8h5X9J2sKQg2eA/viewform?embedded=true" width="300" height="800" frameBorder="0" marginHeight="0" marginWidth="0">
-                                        Chargement…
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>

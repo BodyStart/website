@@ -1,8 +1,15 @@
 import '../assets/css/sousprogramme.css';
+import { useNavigate } from 'react-router-dom';
 
 function PersonnaliseProgramme() {
+    const navigate = useNavigate();
+
+    function handleClick(event, path) {
+        event.preventDefault();
+        navigate(path);
+    }
     return (
-        <main>
+        <main className='sousprogramme'>
             <div className="description">
                 <h2><u>Description du programme personnalisé:</u></h2>
                 <p>
@@ -51,9 +58,9 @@ function PersonnaliseProgramme() {
                         <p>- Numéro whatsapp pour répondre à vos questions</p>
                         <hr className="ligne-noir"/>
                     </div>
-                    <a href="">
-                        <button className="btn-primary">Choisir</button>
-                    </a>
+                    <button type="button" className="btn-primary" onClick={(event) => handleClick(event, '/programme/demande')}>
+                        Choisir
+                    </button>
                 </div>
             </div>
         </main>

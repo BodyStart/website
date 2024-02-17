@@ -346,15 +346,6 @@ body {
   margin-bottom: 1vw;
 }
 
-.modal-content {
-  background-color: #D8CDC3;
-}
-
-.modal-open .programmes:hover {
-  transform: none;
-  box-shadow: none;
-}
-
 @media screen and (min-width: 750px) and (max-width: 900px) {
   .nav li a {
     color: var(--secundary-color);
@@ -477,7 +468,7 @@ body {
     z-index: 1000;
   }
 
-  /* This class is added to nav23 when the hamburger is clicked */
+  /* This className is added to nav23 when the hamburger is clicked */
   .nav23-active {
     transform: translateX(0);
   }
@@ -508,11 +499,11 @@ body {
   }
 
   .Accueil-background-image {
-    background: url(/images/accueil.png);
-    background-size: auto !important;
+    background: url(/src/assets/images/accueil.png);
+    background-size: cover !important;
     background-position: top !important;
     background-repeat: no-repeat;
-    height: 45vw;
+    height: 60vw;
   }
 
   .section-titre a {
