@@ -1,3 +1,4 @@
+import '../assets/css/quisuisje.css'
 function Quisuije() {
     return (
         <>
