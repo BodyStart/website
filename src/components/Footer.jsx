@@ -1,4 +1,4 @@
-function Header() {
+function Footer() {
     return (
         <footer className="footer">
             <hr className="footer-hr" />
@@ -17,4 +17,4 @@ function Header() {
         </footer>
     );
 }
-export default Header;
+export default Footer;
