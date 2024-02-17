@@ -1,0 +1,206 @@
+.retourprofil {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.bouton-rejoindre {
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.bouton-rejoindre:hover {
+  background-color: var(--third-color);
+}
+
+.header-center1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32%;
+}
+
+.profil {
+  border-style: double;
+}
+
+.titre-debutant {
+  color: var(--secundary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seance {
+  display: flex;
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PRESENTATION SEANCE*/
+
+.zone {
+  display: flex;
+  align-items: center;
+  margin: 30px 15%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+}
+
+.zone img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 10%;
+  border-radius: 8px; /* Bordure arrondie si tu le souhaites */
+}
+
+.zonetexte {
+  width: 42%;
+  color: var(--secundary-color);
+}
+
+.zonetexte hr {
+  height: 5px;
+  width: 40%;
+  background-color: var(--fourth-color);
+  border: none;
+  margin: 15px 0px;
+}
+
+.zonetexte p:first-child {
+  font-size: 2.5em; /* Taille du titre */
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.zonetexte p {
+  margin: 8px 0;
+  font-size: 1.2em; /* Taille du texte normal */
+}
+
+.zone button {
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.zone button:hover {
+  background-color: var(--third-color);
+}
+
+.astuce {
+  color: var(--secundary-color);
+  margin: 30px 15%;
+  font-size: 1.2em;
+}
+
+/* LISTE DES EXERCICES*/
+
+.allexercise {
+  margin: 30px 7.5%;
+  color: var(--secundary-color);
+}
+
+.exo1,
+.exo2,
+.exo3,
+.exo4,
+.exo5,
+.exo6 {
+  align-items: center;
+  display: flex;
+  margin-top: 2%;
+}
+
+.allexercise img {
+  max-width: 15%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.exo1 h2,
+.exo2 h2,
+.exo3 h2,
+.exo4 h2,
+.exo5 h2,
+.exo6 h2 {
+  width: 11%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.5em;
+}
+
+.détails {
+  width: 20%;
+  margin-right: 15%;
+}
+
+.détails h3 {
+  font-size: 1.5em;
+}
+
+.détails p {
+  font-size: 1em;
+}
+
+.conseils {
+  font-size: 0.8em;
+}
+
+.conseils p {
+  margin: 0;
+}
+
+/* BOUTON PLUS detail exercices */
+
+.buttonplus {
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonplus button {
+  background-color: transparent;
+  border: none;
+  color: var(--fifth-color);
+  cursor: pointer;
+  font-size: medium;
+}
+
+.details-programme1,
+.details-programme2,
+.details-programme3,
+.details-programme4,
+.details-programme5,
+.details-programme6 {
+  display: none;
+}
+
+.details-programme1.show,
+.details-programme2.show,
+.details-programme3.show,
+.details-programme4.show,
+.details-programme5.show,
+.details-programme6.show {
+  display: block;
+}
