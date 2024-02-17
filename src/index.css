@@ -40,8 +40,7 @@ body {
   padding: 0 20px;
 }
 
-.header-right
-{
+.header-right {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -82,8 +81,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2.5rem; /* Largeur du menu icon */
-  height: 2rem; /* Hauteur du menu icon */
+  width: 2.5rem;
+  /* Largeur du menu icon */
+  height: 2rem;
+  /* Hauteur du menu icon */
   cursor: pointer;
   padding: 0 25px;
 }
@@ -140,7 +141,8 @@ body {
 }
 
 .connexion-btn {
-  background-color: var(--secundary-color); /* Couleur de fond du bouton */
+  background-color: var(--secundary-color);
+  /* Couleur de fond du bouton */
   border: 1px solid var(--third-color);
   color: var(--primary-color);
   padding: 15px 50px;
@@ -150,9 +152,8 @@ body {
 }
 
 .connexion-btn:hover {
-  background-color: var(
-    --third-color
-  ); /* Couleur de fond du bouton au survol */
+  background-color: var(--third-color);
+  /* Couleur de fond du bouton au survol */
   color: var(--primary-color);
 }
 
@@ -165,36 +166,8 @@ body {
 
 /* Bas de page*/
 
-.footer-hr {
-  border: 0;
-  height: 1px;
-  background-color: var(--secundary-color);
-  margin: 15px 0;
-}
 
-.footer {
-  color: var(--secundary-color);
-  text-align: center;
 
-}
-
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footer-content p {
-  margin: 10px 0;
-}
-
-.footer-content a {
-  color: var(--secundary-color);
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
 
 /* bouton chat */
 
@@ -214,22 +187,23 @@ body {
 }
 
 .chat-btn:hover {
-  background-color: var(
-    --third-color
-  ); /* Couleur de fond du bouton au survol */
+  background-color: var(--third-color);
+  /* Couleur de fond du bouton au survol */
   color: var(--primary-color);
 }
 
 /* BURGER OUVERTURE/FERMETURE */
 
 .menu-burger {
-  display: none; /* Cache la fenêtre modale par défaut */
+  display: none;
+  /* Cache la fenêtre modale par défaut */
   position: absolute;
   top: 0;
   left: 0;
   width: 20%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Fond semi-transparent */
 }
 
 .menu-burger.affiche-menu {
@@ -247,24 +221,31 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  border-bottom: 0.1vw solid var(--secundary-color); /* Ligne de séparation entre les boutons */
-  background-color: transparent; /* Pas de couleur de fond */
-  color: var(--secundary-color); /* Couleur du texte */
+  border-bottom: 0.1vw solid var(--secundary-color);
+  /* Ligne de séparation entre les boutons */
+  background-color: transparent;
+  /* Pas de couleur de fond */
+  color: var(--secundary-color);
+  /* Couleur du texte */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Effet de survol */
 
 .burger-bouton button:hover {
-  background-color: var(--secundary-color); /* Couleur de fond au survol */
-  color: var(--third-color); /* Couleur du texte au survol */
+  background-color: var(--secundary-color);
+  /* Couleur de fond au survol */
+  color: var(--third-color);
+  /* Couleur du texte au survol */
 }
 
 /* Effet de survol pour le bouton de fermeture */
 
 .fermer:hover {
-  background-color: var(--secundary-color); /* Couleur de fond au survol */
-  color: var(--third-color); /* Couleur du texte au survol */
+  background-color: var(--secundary-color);
+  /* Couleur de fond au survol */
+  color: var(--third-color);
+  /* Couleur du texte au survol */
 }
 
 .bouton-profil {
@@ -296,11 +277,14 @@ body {
   border: 0.1vw solid var(--secundary-color);
   border-radius: 1vw 1vw 0 0;
   box-shadow: 0 0 1vw var(--secundary-color);
-  display: none; /* Masquer la boîte de chat par défaut */
+  display: none;
+  /* Masquer la boîte de chat par défaut */
   padding: 7% 4%;
   overflow-y: auto;
-  max-height: 10vw; /* Hauteur maximale de la boîte de chat */
-  z-index: 1000; /* Assurez-vous que la boîte de chat apparaît au-dessus des autres éléments */
+  max-height: 10vw;
+  /* Hauteur maximale de la boîte de chat */
+  z-index: 1000;
+  /* Assurez-vous que la boîte de chat apparaît au-dessus des autres éléments */
   word-wrap: break-word;
 }
 
@@ -316,13 +300,16 @@ body {
   right: 0;
   padding: 1vw;
   cursor: pointer;
-  color: var(--third-color); /* Couleur du texte */
+  color: var(--third-color);
+  /* Couleur du texte */
 }
 
 .chat-box button {
   font-size: 0.8vw;
-  background-color: var(--secundary-color); /* Couleur de fond du bouton */
-  color: var(--primary-color); /* Couleur du texte */
+  background-color: var(--secundary-color);
+  /* Couleur de fond du bouton */
+  color: var(--primary-color);
+  /* Couleur du texte */
   border: none;
   padding: 0.3vw;
   margin-top: 0.3vw;
@@ -332,12 +319,14 @@ body {
 }
 
 .chat-box button:hover {
-  background-color: #e8b889; /* Couleur de fond du bouton au survol */
+  background-color: #e8b889;
+  /* Couleur de fond du bouton au survol */
 }
 
 #chatContent {
   font-size: 0.8vw;
-  color: var(--third-color); /* Couleur du texte dans la boîte de chat */
+  color: var(--third-color);
+  /* Couleur du texte dans la boîte de chat */
 }
 
 #chatBox.open {
@@ -357,7 +346,7 @@ body {
   margin-bottom: 1vw;
 }
 
-.modal-content{
+.modal-content {
   background-color: #D8CDC3;
 }
 
@@ -374,12 +363,12 @@ body {
     transition: color 0.3s ease;
     padding: 20px;
     font-size: 16px;
-}
+  }
 
-.logo-text {
-  font-size: 3.5em;
-  cursor: pointer;
-}
+  .logo-text {
+    font-size: 3.5em;
+    cursor: pointer;
+  }
 
 }
 
@@ -391,12 +380,12 @@ body {
     transition: color 0.3s ease;
     padding: 20px;
     font-size: 14px;
-}
+  }
 
-.logo-text {
-  font-size: 3em;
-  cursor: pointer;
-}
+  .logo-text {
+    font-size: 3em;
+    cursor: pointer;
+  }
 
 }
 
@@ -406,7 +395,7 @@ body {
     margin-bottom: 20px;
     color: var(--secundary-color);
     font-size: 2em;
-}
+  }
 }
 
 /* Hamburger button */
@@ -445,80 +434,94 @@ body {
 
 /* Style the hamburger when active */
 .hamburger.active {
-  color: #fff; /* Example style change */
+  color: #fff;
+  /* Example style change */
 }
 
-.nav23 ul li a, .nav23 ul li a:visited {
-  color: #fff; /* Adjust if you have a different preferred color */
+.nav23 ul li a,
+.nav23 ul li a:visited {
+  color: #fff;
+  /* Adjust if you have a different preferred color */
   text-decoration: none;
-  font-size: 1.5rem; /* Adjust font size as needed */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
 }
 
 
 @media (max-width: 700px) {
   .nav {
-      display: none; /* Hide the original nav on smaller screens */
+    display: none;
+    /* Hide the original nav on smaller screens */
   }
 
   .hamburger {
-      display: block; /* Show the hamburger button on smaller screens */
+    display: block;
+    /* Show the hamburger button on smaller screens */
   }
 
   /* The nav23 will still be hidden until toggled by the hamburger button */
   .nav23 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.9);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-      z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   /* This class is added to nav23 when the hamburger is clicked */
   .nav23-active {
-      transform: translateX(0);
+    transform: translateX(0);
   }
+
   .header-right {
     width: auto;
     /* width: 104.91px; */
-}
-.logo-text {
-  font-size: 3em;
-  cursor: pointer;
-}
-.header-right {
-  padding: 0px;
-}
-.header-left {
-  padding: 0px;
-}
-.wrapper .icon-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5px;
-}
-.Accueil-background-image {
-  background: url(/images/accueil.png);
-  background-size: auto !important;
-  background-position: top !important;
-  background-repeat: no-repeat;
-  height: 45vw;
-}
-.section-titre a {
-  padding: 0 px;
-}
-.section-titre h2 {
-  font-size: 3em !important;
-}
+  }
+
+  .logo-text {
+    font-size: 3em;
+    cursor: pointer;
+  }
+
+  .header-right {
+    padding: 0px;
+  }
+
+  .header-left {
+    padding: 0px;
+  }
+
+  .wrapper .icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .Accueil-background-image {
+    background: url(/images/accueil.png);
+    background-size: auto !important;
+    background-position: top !important;
+    background-repeat: no-repeat;
+    height: 45vw;
+  }
+
+  .section-titre a {
+    padding: 0 px;
+  }
+
+  .section-titre h2 {
+    font-size: 3em !important;
+  }
 }
 
 @media (max-width: 550px) {
@@ -527,20 +530,24 @@ body {
     text-align: center;
     display: flex;
     padding-bottom: 0px
-}
-.logo-bs {
-  height: 80px;
-  width: 80px;
-}
-.description h2 {
-  text-align: center;
-}
-.programmes {
-  width: 370px;
-}
-.pricing-card {
-  width: 330px;
-}
+  }
+
+  .logo-bs {
+    height: 80px;
+    width: 80px;
+  }
+
+  .description h2 {
+    text-align: center;
+  }
+
+  .programmes {
+    width: 370px;
+  }
+
+  .pricing-card {
+    width: 330px;
+  }
 }
 
 .liststyle1 {
@@ -548,39 +555,50 @@ body {
 }
 
 .liststyle1 a:hover {
-  color: #ff9900; /* Change the text color on hover */
-  background-color: #d3cdcd; /* Add a subtle background color on hover */
-  transform: scale(1.05); /* Slightly increase the size */
-  transition: all 0.3s ease; /* Smooth transition for the effect */
+  color: #ff9900;
+  /* Change the text color on hover */
+  background-color: #d3cdcd;
+  /* Add a subtle background color on hover */
+  transform: scale(1.05);
+  /* Slightly increase the size */
+  transition: all 0.3s ease;
+  /* Smooth transition for the effect */
 }
 
 .liststyle1 a:active {
-  transform: scale(0.95); /* Slightly decrease the size */
+  transform: scale(0.95);
+  /* Slightly decrease the size */
 }
 
 .liststyle1 a.clicked {
-  color: #ff9900; /* Example color for a clicked link */
-  font-weight: bold; /* Make clicked link bold */
+  color: #ff9900;
+  /* Example color for a clicked link */
+  font-weight: bold;
+  /* Make clicked link bold */
 }
 
 .center_all {
-    position: relative;
-    top: -550px;
+  position: relative;
+  top: -550px;
 }
 
 .nav li {
-  transition: transform 0.5s ease; /* Adjust time as needed */
+  transition: transform 0.5s ease;
+  /* Adjust time as needed */
 }
 
 .nav li:hover {
-  transform: scale(1.1); /* Adjust size as needed */
+  transform: scale(1.1);
+  /* Adjust size as needed */
 }
 
 .logo-text {
 
-  transition: transform 0.5s ease; /* Adjust time as needed */
+  transition: transform 0.5s ease;
+  /* Adjust time as needed */
 }
 
 .logo-text:hover {
-  transform: scale(1.1); /* Adjust size as needed */
+  transform: scale(1.1);
+  /* Adjust size as needed */
 }
