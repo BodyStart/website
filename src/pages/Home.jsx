@@ -1,7 +1,15 @@
 
+import { useEffect } from 'react';
 import '../../public/assets/css/Home.css';
 
 function Home() {
+
+    useEffect(() => {
+        const footer = document.querySelector('footer');
+        footer.classList.remove('footer');
+        footer.classList.add('footer-center');
+    }, []);
+
     return (
         <>
             <main>

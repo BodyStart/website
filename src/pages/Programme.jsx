@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../../public/assets/css/programme.css'
 import {useNavigate} from "react-router-dom";
 
@@ -8,6 +9,13 @@ function Programme() {
         event.preventDefault();
         navigate(path);
     }
+
+    useEffect(() => {
+        const footer = document.querySelector('footer');
+        footer.classList.remove('footer-center');
+        footer.classList.add('footer');
+    }, []);
+
     return (
         <main className="programmeLayout">
             <div className="placement">

@@ -1,6 +1,14 @@
+import { useEffect } from 'react';
 import '../../public/assets/css/abonnement.css'
 
 function Abonnement() {
+
+    useEffect(() => {
+        const footer = document.querySelector('footer');
+        footer.classList.remove('footer-center');
+        footer.classList.add('footer');
+    }, []);
+
     return (
         <main className="abonnement">
             <div className="placement">

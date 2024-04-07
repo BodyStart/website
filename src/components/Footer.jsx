@@ -6,7 +6,6 @@ function Footer() {
         <footer className="footer">
             <hr className="footer-hr" />
             <div className="footer-content">
-                <p>BODYSTART</p>
                 <div className="wrapper">
                     <ul className="icon-list">
                         <li className="item"><a href="https://www.instagram.com/adam_.lc/"><i className="fa-brands fa-instagram icon"></i></a></li>
@@ -15,7 +14,7 @@ function Footer() {
                         <li className="item"><a href="https://discord.gg/rhGMPCQM"><i className="fa-brands fa-discord icon"></i></a></li>
                     </ul>
                 </div>
-                <p>©{year} Bodystart</p>
+                <p>©{year} BodyStart</p>
             </div>
         </footer>
     );

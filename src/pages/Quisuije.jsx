@@ -1,11 +1,17 @@
+import { useEffect } from 'react';
 import '../../public/assets/css/quisuisje.css'
 function Quisuije() {
+        useEffect(() => {
+            const footer = document.querySelector('footer');
+            footer.style.display = 'none';
+            return () => {
+                footer.style.display = 'block';
+            }
+        }, []);
+
     return (
         <>
             <div className="container-fluid">
-                <div className="section-title">
-                    <h3>Mon Histoire</h3>
-                </div>
                 <section className="design-section">
                     <div className="timeline">
                         <div className="timeline-empty"></div>

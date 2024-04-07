@@ -23,8 +23,8 @@ function Header() {
             nav23.classList.remove('nav23-active');
         });
 
-        links.forEach(function(link) {
-            link.addEventListener('click', function(e) {
+        links.forEach(function (link) {
+            link.addEventListener('click', function (e) {
                 nav23.classList.remove('nav23-active');
             });
         });
@@ -49,9 +49,10 @@ function Header() {
                     <nav className="nav">
                         <ul>
                             <li><a onClick={(event) => handleClick(event, '/')} className="active">Accueil</a></li>
-                            <li><a onClick={(event) => handleClick(event, '/adam-charles-bio')}>Qui suis-je ?</a></li>
+                            <li><a onClick={(event) => handleClick(event, '/story')}>Qui suis-je ?</a></li>
                             <li><a onClick={(event) => handleClick(event, '/programme')}>Programmes</a></li>
                             <li><a onClick={(event) => handleClick(event, '/abonnement')}>Abonnement</a></li>
+                            <li><a onClick={(event) => handleClick(event, '/connexion')}>Connexion</a></li>
                             {/* <li><a href="5.transformations.html">Transformations</a></li>
                             <li><a href="6.vossuggestions.html">Vos suggestions</a></li>
                             <li><a href="7.membres.html">Membres (coach)</a></li> */
@@ -66,23 +67,24 @@ function Header() {
                         <div className="close-btn">✖</div>
                         <ul>
                             <li className="liststyle1"><a onClick={(event) => handleClick(event, '/')} className="active">Accueil</a></li>
-                            <li className="liststyle1"> <a onClick={(event) => handleClick(event, '/adam-charles-bio')}>Qui suis-je ?</a></li>
+                            <li className="liststyle1"> <a onClick={(event) => handleClick(event, '/story')}>Qui suis-je ?</a></li>
                             <li className="liststyle1"> <a onClick={(event) => handleClick(event, '/programme')}>Programmes</a></li>
                             <li className="liststyle1"> <a onClick={(event) => handleClick(event, '/abonnement')}>Abonnement</a></li>
+                            <li className="liststyle1"> <a onClick={(event) => handleClick(event, '/connexion')}>Connexion</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 {/* <div className="header-right" id="headerRight">
-                <button
-                id="boutonConnexion"
-                className="connexion-btn"
-                onclick="toggleBurgerMenu()"
-                >
-                Connexion
-                </button>
-            </div>  */
-                }
+                    <button
+                        id="boutonConnexion"
+                        className="connexion-btn"
+                        onclick="toggleBurgerMenu()"
+                    >
+                        Connexion
+                    </button>
+                </div> */}
+
 
                 <div id="maburger" className="menu-burger">
                     <div className="burger-bouton">
