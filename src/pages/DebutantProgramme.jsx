@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../../public/assets/css/sousprogramme.css';
 import { useNavigate } from 'react-router-dom';
 function DebutantProgramme() {
@@ -7,6 +8,13 @@ function DebutantProgramme() {
         event.preventDefault();
         navigate(path);
     }
+    
+    useEffect(() => {
+        const footer = document.querySelector('footer');
+        footer.classList.remove('footer');
+        footer.classList.add('footer-center');
+    }, []);
+
     return (
         <main className='sousprogramme'>
             <div className="description">
